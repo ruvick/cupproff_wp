@@ -1,7 +1,7 @@
 {
-  "name": "smartgardens",
+  "name": "cupproff",
   "version": "1.0.1",
-  "description": "smartgardens",
+  "description": "cupproff",
   "main": "index.php",
   "scripts": {
     "test": "editorconfig-checker",
