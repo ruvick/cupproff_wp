@@ -17,25 +17,44 @@ get_header(); ?>
 
 <?php get_template_part('template-parts/header-section');?>
 
-	<main id="primary" class="page site-main"> 
+<main class="page page-recurring">
 
-		<section class="content"> 
-			<div class="_container">
+	<div class="bg-img bg-img-01">
+		<picture><source srcset="<?php echo get_template_directory_uri();?>/img/bg-img/01.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/bg-img/01.png?_v=1644843902057" alt=""></picture>
+	</div>
+	<div class="bg-img bg-img-02">
+		<picture><source srcset="<?php echo get_template_directory_uri();?>/img/bg-img/02.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/bg-img/02.png?_v=1644843902057" alt=""></picture>
+	</div>
+	<div class="bg-img bg-img-03">
+		<picture><source srcset="<?php echo get_template_directory_uri();?>/img/bg-img/03.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/bg-img/03.png?_v=1644843902057" alt=""></picture>
+	</div>
+	<!-- 			<div class="bg-img bg-img-04">
+		<picture><source srcset="<?php echo get_template_directory_uri();?>/img/bg-img/04.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/bg-img/04.png?_v=1644843902057" alt=""></picture>
+	</div> -->
+	<div class="bg-img bg-img-05">
+		<picture><source srcset="<?php echo get_template_directory_uri();?>/img/bg-img/05.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/bg-img/05.png?_v=1644843902057" alt=""></picture>
+	</div>
+	<div class="bg-img bg-img-06">
+		<picture><source srcset="<?php echo get_template_directory_uri();?>/img/bg-img/06.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/bg-img/06.png?_v=1644843902057" alt=""></picture>
+	</div>
 
-			<?php
-			if ( function_exists('yoast_breadcrumb') ) {
-				yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
-			}
+	<section id="catalog-sec" class="catalog-sec recurring">
+		<div class="_container"> 
+  		<?php
+				if ( function_exists('yoast_breadcrumb') ) {
+					yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );  
+				}
 			?> 
 
-			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-				<h1><?php the_title();?></h1>
-					<?php the_content();?>
-					<?php endwhile;?>
-				<?php endif; ?> 
+			<h1><? the_title();?></h1>
 
-			</div>
-		</section>
-	</main>
+			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+				<?php the_content();?>
+				<?php endwhile;?>
+			<?php endif; ?> 
+
+		</div>
+	</section>
+</main>
 
 <?php get_footer();

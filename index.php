@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<?php get_template_part('template-parts/header-section');?>
+<?php get_template_part('template-parts/header-index-section');?>
 
 <main class="page">
 
@@ -39,7 +39,7 @@
 					</div>
 				</div>
 				<!-- </div> -->
-				<!-- Кнопки-стрлеки -->
+				<!-- Кнопки-стрлеки --> 
 				<div class="swiper-button swiper-button-next about__swiper-button-next"></div>
 				<div class="swiper-button swiper-button-prev about__swiper-button-prev"></div>
 			</div>

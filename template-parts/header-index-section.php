@@ -1,35 +1,25 @@
-<header id="header" class="header">
-	<div class="header__container _container"> 
+<header id="header-index" class="header header-index">
+	<div class="header__container _container">
 
-		<div class="header__row d-flex"> 
+		<div class="header__row d-flex">
 
-			<a href="<? bloginfo("url"); ?>" class="logo-icon header__logo" aria-label="Логотип"></a>
+			<a href="<? bloginfo("url"); ?>" class="logo-icon header__logo" aria-label="Логотип"></a> 
 
-			<div class="header__navigation"> 
-
-      <? $tel = carbon_get_theme_option("as_phones_1"); 
-					if (!empty($tel)){?>
-				<div class="contacts header__contacts d-flex">
-					<p class="contacts__time-phone header__time-phone">Горячая линия</p>
-          <a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>" class="contacts__phone header__phone"><? echo $tel; ?></a>
-				</div>
-        <a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>" class="mob-phone-icon"><? echo $tel = carbon_get_theme_option("as_phone_1"); ?></a>
-        <?}?> 
+			<div class="header__navigation">
 
 				<a href="#" class="bascket-icon" aria-label="Корзина"><span class="bascket-icon__number bascet_counter">1</span></a>
 
 				<div class="header__menu-icon-block">
 					<p class="header__menu-icon-text">Меню</p>
-					<div class="icon-menu icon-menu_open" aria-label="Бургер меню">
+					<div class="icon-menu icon-menu_open" aria-label="Бургер меню">  
 						<span></span>
 						<span></span>
-						<span></span>
+						<span></span> 
 					</div>
 				</div>
 			</div>
 
 		</div>
-
 	</div>
 </header>
 
@@ -103,3 +93,5 @@
 		</div>
 	</div>
 </div>
+
+<div class="bg-index"></div>
