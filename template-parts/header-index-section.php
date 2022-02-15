@@ -7,7 +7,7 @@
 
 			<div class="header__navigation">
 
-				<a href="#" class="bascket-icon" aria-label="Корзина"><span class="bascket-icon__number bascet_counter">1</span></a>
+				<a href="<?php echo get_permalink(15);?>" class="bascket-icon" aria-label="Корзина"><span class="bascket-icon__number bascet_counter">1</span></a>
 
 				<div class="header__menu-icon-block">
 					<p class="header__menu-icon-text">Меню</p>

@@ -16,7 +16,7 @@
         <a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>" class="mob-phone-icon"><? echo $tel = carbon_get_theme_option("as_phone_1"); ?></a>
         <?}?> 
 
-				<a href="#" class="bascket-icon" aria-label="Корзина"><span class="bascket-icon__number bascet_counter">1</span></a>
+				<a href="<?php echo get_permalink(15);?>" class="bascket-icon" aria-label="Корзина"><span class="bascket-icon__number bascet_counter">1</span></a>
 
 				<div class="header__menu-icon-block">
 					<p class="header__menu-icon-text">Меню</p>

@@ -4,39 +4,41 @@
  * Template Post Type: page
  */
 
-get_header(); ?>
-
-<!-- События на кнопке -->
-<button class="btn btn__to-card" id = "btn__to-card" onclick = "add_tocart(this, 0); return false;"
-  data-price = "<?echo carbon_get_post_meta(get_the_ID(),"offer_price"); ?>"
-  data-sku = "<? echo carbon_get_post_meta(get_the_ID(),"offer_sku")?>"
-  data-size = ""
-  data-oldprice = "<? echo carbon_get_post_meta(get_the_ID(),"offer_old_price")?>"
-  data-lnk = "<? echo  get_the_permalink(get_the_ID());?>"
-  data-name = "<? echo  get_the_title();?>"
-  data-count = "1"
-  data-picture = "<?php echo wp_get_attachment_image_src($item['gal_img'], 'large')[0];?>"
-
-  data-picture = "<?php  $imgTm = get_the_post_thumbnail_url( get_the_ID(), "tominiatyre" ); echo empty($imgTm)?get_bloginfo("template_url")."/img/no-photo.jpg":$imgTm; ?>">
-    Добавить в корзину
-</button> 
+get_header(); ?> 
 
 <?php get_template_part('template-parts/header-section');?>
 
-<main class="main page">	
+<main class="page page-recurring">
 
-<section class = "content">
-		<div class="_container">
+	<div class="bg-img bg-img-01">
+		<picture><source srcset="<?php echo get_template_directory_uri();?>/img/bg-img/01.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/bg-img/01.png?_v=1644843902057" alt=""></picture>
+	</div>
+	<div class="bg-img bg-img-02">
+		<picture><source srcset="<?php echo get_template_directory_uri();?>/img/bg-img/02.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/bg-img/02.png?_v=1644843902057" alt=""></picture>
+	</div>
+	<div class="bg-img bg-img-03">
+		<picture><source srcset="<?php echo get_template_directory_uri();?>/img/bg-img/03.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/bg-img/03.png?_v=1644843902057" alt=""></picture>
+	</div>
+	<!-- 			<div class="bg-img bg-img-04">
+		<picture><source srcset="<?php echo get_template_directory_uri();?>/img/bg-img/04.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/bg-img/04.png?_v=1644843902057" alt=""></picture>
+	</div> -->
+	<div class="bg-img bg-img-05">
+		<picture><source srcset="<?php echo get_template_directory_uri();?>/img/bg-img/05.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/bg-img/05.png?_v=1644843902057" alt=""></picture>
+	</div>
+	<div class="bg-img bg-img-06">
+		<picture><source srcset="<?php echo get_template_directory_uri();?>/img/bg-img/06.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/bg-img/06.png?_v=1644843902057" alt=""></picture>
+	</div>
 
-			<div class="bread-crumbs-box">
-				<?php
-					if ( function_exists('yoast_breadcrumb') ) {
-					yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
-					}
-				?>  
-			</div>
+	<section class="recurring content">
+		<div class="_container"> 
+  		<?php
+				if ( function_exists('yoast_breadcrumb') ) {
+					yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );  
+				}
+			?> 
+
+			<h1><? the_title();?></h1>
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-        <h1><?php the_title();?></h1>
         <?php the_content();?>
       <?php endwhile;?>
       <?php endif; ?>
