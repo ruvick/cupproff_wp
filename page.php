@@ -38,7 +38,7 @@ get_header(); ?>
 		<picture><source srcset="<?php echo get_template_directory_uri();?>/img/bg-img/06.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/bg-img/06.png?_v=1644843902057" alt=""></picture>
 	</div>
 
-	<section id="catalog-sec" class="catalog-sec recurring">
+	<section class="recurring">
 		<div class="_container"> 
   		<?php
 				if ( function_exists('yoast_breadcrumb') ) {
