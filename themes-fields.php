@@ -78,6 +78,10 @@ Container::make( 'theme_options', __( 'Настройки темы', 'crb' ) )
           ->set_width(50),
         Field::make( 'text', 'as_email_send', __( 'Email для отправки' ) ) 
           ->set_width(50),
+        Field::make( 'text', 'as_email_opt', __( 'Email, Оптовые поставки' ) )
+          ->set_width(50),
+        Field::make( 'text', 'as_email_coop', __( 'Email, Сотрудничество' ) )
+          ->set_width(50),
         Field::make( 'text', 'as_inn', __( 'ИНН' ) )
           ->set_width(50),
         Field::make( 'text', 'as_orgn', __( 'ОРГН' ) )

@@ -43,39 +43,39 @@ add_action('after_setup_theme', function () {
 
 
 // Добавление стилей к пунктам меню li
-add_filter('nav_menu_css_class', 'change_menu_item_css_classes', 10, 4);
+// add_filter('nav_menu_css_class', 'change_menu_item_css_classes', 10, 4);
 
-function change_menu_item_css_classes($classes, $item, $args, $depth)
-{
-	if ($item->ID  && 'menu_cat' === $args->theme_location) {
-		$classes[] = 'footer-top-wrap-list-item-sublist-item';
-	}
+// function change_menu_item_css_classes($classes, $item, $args, $depth)
+// {
+// 	if ($item->ID  && 'menu_cat' === $args->theme_location) {
+// 		$classes[] = 'footer-top-wrap-list-item-sublist-item';
+// 	}
 
-	if ($item->ID  && 'menu_company' === $args->theme_location) {
-		$classes[] = 'footer-top-wrap-list-item-sublist-item';
-	}
+// 	if ($item->ID  && 'menu_company' === $args->theme_location) {
+// 		$classes[] = 'footer-top-wrap-list-item-sublist-item';
+// 	}
 
-	if ($item->ID  && 'menu_main' === $args->theme_location) {
-		$classes[] = 'header-bottom-wrap-menu-item';
-	}
+// 	if ($item->ID  && 'menu_main' === $args->theme_location) {
+// 		$classes[] = 'header-bottom-wrap-menu-item';
+// 	}
 
-	return $classes;
-}
+// 	return $classes;
+// }
 
 
 // Добавляет атрибут class к ссылке в пунктах меню menu_main
-add_filter('nav_menu_link_attributes', 'filter_nav_menu_link_attributes', 10, 4);
-function filter_nav_menu_link_attributes($atts, $item, $args, $depth)
-{
-	if (in_array($args->theme_location, ['menu_main'])) {
-		$atts['class'] = 'header-bottom-wrap-menu-item__link';
+// add_filter('nav_menu_link_attributes', 'filter_nav_menu_link_attributes', 10, 4);
+// function filter_nav_menu_link_attributes($atts, $item, $args, $depth)
+// {
+// 	if (in_array($args->theme_location, ['menu_main'])) {
+// 		$atts['class'] = 'header-bottom-wrap-menu-item__link';
 
-		if ($item->current) {
-			$atts['class'] .= ' menu-link--active'; //активный пункт меню
-		}
-	}
-	return $atts;
-}
+// 		if ($item->current) {
+// 			$atts['class'] .= ' menu-link--active'; //активный пункт меню
+// 		}
+// 	}
+// 	return $atts;
+// }
 
 
 // Добавляет иконку к ссылкам меню, прикрепленное к области меню menu_main
@@ -105,18 +105,18 @@ function filter_nav_menu_link_attributes($atts, $item, $args, $depth)
 
 
 // Изменить css класс submenu 
-add_filter('nav_menu_submenu_css_class', 'change_wp_nav_menu', 10, 3);
+// add_filter('nav_menu_submenu_css_class', 'change_wp_nav_menu', 10, 3);
 
-function change_wp_nav_menu($classes, $args, $depth)
-{
-	foreach ($classes as $key => $class) {
-		if ($class == 'sub-menu') {
-			$classes[$key] = 'header-bottom-wrap-menu-item-submenu';
-		}
-	}
+// function change_wp_nav_menu($classes, $args, $depth)
+// {
+// 	foreach ($classes as $key => $class) {
+// 		if ($class == 'sub-menu') {
+// 			$classes[$key] = 'header-bottom-wrap-menu-item-submenu';
+// 		}
+// 	}
 
-	return $classes;
-}
+// 	return $classes;
+// }
 // === Menu End ========================================================================================================
 
 

@@ -64,15 +64,8 @@
 					</div>
 					<div class="menu__list">
 						<h3>Дополнительно</h3>
-						<ul class="menu__list-ul">
-							<li class="menu__list-item"><a href="#" class="menu__list-link">О нас</a></li>
-							<li class="menu__list-item"><a href="#" class="menu__list-link">Доставка</a></li>
-							<li class="menu__list-item"><a href="#" class="menu__list-link">Разработка дизайна</a></li>
-							<li class="menu__list-item"><a href="#" class="menu__list-link">Этапы производства</a></li>
-							<li class="menu__list-item"><a href="#" class="menu__list-link">Контакты</a></li>
-						</ul>
-					<!-- <?php wp_nav_menu( array('theme_location' => 'menu_main','menu_class' => 'mob-menu__list',
-						'container_class' => 'mob-menu__list','container' => false )); ?>  -->
+						<?php wp_nav_menu( array('theme_location' => 'menu_main','menu_class' => 'menu__list-ul',
+							'container_class' => 'menu__list-ul','container' => false )); ?> 
 						<!-- <a href="#callback" class="header__popup-link header__popup-link_mob _popup-link">ЗАКАЗАТЬ ЗВОНОК</a> -->
 					</div>
 				</div>
@@ -81,17 +74,19 @@
 		<div class="menu__footer">
 			<div class="menu__container menu__container_flex">
 				<div class="contacts menu__footer-contacts header__contacts d-flex">
-					<p class="contacts__time-phone header__time-phone">Горячая линия</p>
-					<a href="tel:88004882222" class="contacts__phone header__phone">8 800 488 22 22</a>
+					<? $tel = carbon_get_theme_option("as_phones_1"); 
+						if (!empty($tel)){?>
+						<p class="contacts__time-phone header__time-phone">Горячая линия</p>
+						<a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>" class="contacts__phone header__phone"><? echo $tel; ?></a><?}?> 
 					<!-- <a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>"><? echo $tel = carbon_get_theme_option("as_phone_1"); ?></a> -->
 				</div>
 				<div class="menu__soc-block">
 					<h4>Мы в социальных сетях </h4>
 					<div class="soc-block-icon menu__soc-block-icon">
-						<a href="#" class="soc-block-icon-link menu__soc-block-icon-link menu__soc-icon-1" aria-label="Иконка соцсети"></a>
-						<a href="#" class="soc-block-icon-link menu__soc-block-icon-link menu__soc-icon-2" aria-label="Иконка соцсети"></a>
-						<a href="#" class="soc-block-icon-link menu__soc-block-icon-link menu__soc-icon-3" aria-label="Иконка соцсети"></a>
-						<a href="#" class="soc-block-icon-link menu__soc-block-icon-link menu__soc-icon-4" aria-label="Иконка соцсети"></a>
+						<a href="<?php echo carbon_get_theme_option('as_insta'); ?>" class="soc-block-icon-link menu__soc-block-icon-link menu__soc-icon-1" aria-label="Иконка соцсети"></a>
+						<a href="<?php echo carbon_get_theme_option('as_vk'); ?>" class="soc-block-icon-link menu__soc-block-icon-link menu__soc-icon-2" aria-label="Иконка соцсети"></a>
+						<a href="<?php echo carbon_get_theme_option('as_whatsapp'); ?>" class="soc-block-icon-link menu__soc-block-icon-link menu__soc-icon-3" aria-label="Иконка соцсети"></a>
+						<a href="<?php echo carbon_get_theme_option('as_telegr'); ?>" class="soc-block-icon-link menu__soc-block-icon-link menu__soc-icon-4" aria-label="Иконка соцсети"></a>
 					</div>
 				</div>
 			</div>
