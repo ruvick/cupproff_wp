@@ -33,26 +33,13 @@ get_header(); ?>
 
 			<section id="product-sec" class="product-sec recurring">
 				<div class="_container"> 
-					<p id="breadcrumbs">
-						<span>
-							<span>
-								<a href="index.html">
-									Главная
-								</a> /
-								<a href="catalog.html">
-									Каталог
-								</a> /
-								<a href="products.html">
-									Бумажные стаканчики 400 мл
-								</a> /
-								<span class="breadcrumb_last" aria-current="page">
-									Бумажный стаканчик "Team For"
-								</span>
-							</span>
-						</span>
-					</p>
+          <?php
+				    if ( function_exists('yoast_breadcrumb') ) {
+					    yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );  
+				    }
+			    ?> 
 
-					<h1>Бумажный стаканчик "Team For"</h1>
+					<h1><?php the_title();?></h1>
 
 					<div class="product__row d-flex">
 						<div class="product__slider _swiper d-flex">
