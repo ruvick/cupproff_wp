@@ -39,4 +39,8 @@
 
 	</main>
 
+	<?php get_template_part('template-parts/offer-thickness');?>
+
+	<?php get_template_part('template-parts/payment-info');?>
+
 <?php get_footer(); ?>
