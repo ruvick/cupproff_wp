@@ -55,7 +55,7 @@
 				</h1>
 				<p class="about__subtitle">
 					Закажите бумажные стаканчики с собственным <br>
-					индивидуальным дизайномt
+					индивидуальным дизайном
 				</p>
 				<div class="about__titming d-flex">
 					<div class="about__titming-item">

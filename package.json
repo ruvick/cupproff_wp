@@ -13,6 +13,7 @@
     "send_cat": "scp -C category.php asmi046@asmi046.myjino.ru:domains/cupproff.asmi-studio.ru/wp-content/themes/cupproff/",
     "send_singl": "scp -C single.php asmi046@asmi046.myjino.ru:domains/cupproff.asmi-studio.ru/wp-content/themes/cupproff/",
     "send_index": "scp -C index.php asmi046@asmi046.myjino.ru:domains/cupproff.asmi-studio.ru/wp-content/themes/cupproff/",
+    "send_contacts": "scp -C page-contacts.php asmi046@asmi046.myjino.ru:domains/cupproff.asmi-studio.ru/wp-content/themes/cupproff/",
     "send_func": "scp -C functions.php asmi046@asmi046.myjino.ru:domains/cupproff.asmi-studio.ru/wp-content/themes/cupproff/",
     "send_futt": "scp -C footer.php asmi046@asmi046.myjino.ru:domains/cupproff.asmi-studio.ru/wp-content/themes/cupproff/",
     "mk_part_carbon": "ssh asmi046@asmi046.myjino.ru \"mkdir -p cupproff.asmi-studio.ru/wp-content/themes/cupproff/inc\"",
