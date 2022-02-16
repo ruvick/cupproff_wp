@@ -90,9 +90,9 @@ get_header(); ?>
 
 						<div class="card__col">
 							<div class="card__body d-flex">
-								<div class="card__img-item">
+								<a href="<?php echo get_permalink(26);?>" class="card__img-item">
 									<picture><source srcset="<?php echo get_template_directory_uri();?>/img/card/05.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/card/05.jpg?_v=1644843902057" alt=""></picture>
-								</div>
+								</a>
 								<div class="card__descp">
 									<div class="card__text">
 										<h3 class="card__title">Стаканчик "Good Day"</h3>
@@ -114,9 +114,9 @@ get_header(); ?>
 
 						<div class="card__col">
 							<div class="card__body d-flex">
-								<div class="card__img-item">
+								<a href="<?php echo get_permalink(26);?>" class="card__img-item">
 									<picture><source srcset="<?php echo get_template_directory_uri();?>/img/card/06.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/card/06.jpg?_v=1644843902057" alt=""></picture>
-								</div>
+								</a>
 								<div class="card__descp">
 									<div class="card__text">
 										<h3 class="card__title">Стаканчик "Good Day"</h3>
@@ -138,9 +138,9 @@ get_header(); ?>
 
 						<div class="card__col">
 							<div class="card__body d-flex">
-								<div class="card__img-item">
+								<a href="<?php echo get_permalink(26);?>" class="card__img-item">
 									<picture><source srcset="<?php echo get_template_directory_uri();?>/img/card/07.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/card/07.jpg?_v=1644843902057" alt=""></picture>
-								</div>
+								</a>
 								<div class="card__descp">
 									<div class="card__text">
 										<h3 class="card__title">Стаканчик "Good Day"</h3>
@@ -162,9 +162,9 @@ get_header(); ?>
 
 						<div class="card__col">
 							<div class="card__body d-flex">
-								<div class="card__img-item">
+								<a href="<?php echo get_permalink(26);?>" class="card__img-item">
 									<picture><source srcset="<?php echo get_template_directory_uri();?>/img/card/08.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/card/08.jpg?_v=1644843902057" alt=""></picture>
-								</div>
+								</a>
 								<div class="card__descp">
 									<div class="card__text">
 										<h3 class="card__title">Стаканчик "Good Day"</h3>

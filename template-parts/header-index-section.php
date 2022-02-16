@@ -45,15 +45,9 @@
 			<div class="menu__container">
 				<div class="menu__list-wrap">
 					<div class="menu__list">
-						<h3>Наша продукция</h3>
-						<ul class="menu__list-ul">
-							<li class="menu__list-item"><a href="#" class="menu__list-link">Бумажные стаканчики 170 мл</a></li>
-							<li class="menu__list-item"><a href="#" class="menu__list-link">Бумажные стаканчики 180 мл</a></li>
-							<li class="menu__list-item"><a href="#" class="menu__list-link">Бумажные стаканчики 225 мл</a></li>
-							<li class="menu__list-item"><a href="#" class="menu__list-link">Бумажные стаканчики 250 мл</a></li>
-							<li class="menu__list-item"><a href="#" class="menu__list-link">Бумажные стаканчики 350 мл</a></li>
-							<li class="menu__list-item"><a href="#" class="menu__list-link">Бумажные стаканчики 400 мл</a></li>
-						</ul>
+						<h3><a href="https://cupproff.asmi-studio.ru/ultra">Наша продукция</a></h3>
+						<?php wp_nav_menu( array('theme_location' => 'menu_prod','menu_class' => 'menu__list-ul',
+							'container_class' => 'menu__list-ul','container' => false )); ?> 
 					</div>
 					<div class="menu__list">
 						<ul class="menu__list-ul">
