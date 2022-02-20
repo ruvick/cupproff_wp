@@ -3664,7 +3664,49 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
   margin: 10px 0; } */
 /* Popup JS End*/
 
+.card {
+	perspective: 150rem;
+	position: relative;
+  width: 321px;
+  height: 243px;
+  margin-bottom: 35px;
+}
 
+.card-side {
+    transition: all 1s ease;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 30px 40px 41px 40px;
+    width: 321px;
+    height: 243px;
+    margin-bottom: 35px;
+}
+
+.card-side.back {
+	/* color: #000; */
+  transform: rotateY(-180deg);
+  /* background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%,#C850C0 46%, #FFCC70 100%); */
+  border-radius: 33px;
+  border: 1px solid #E8E8E8;
+}
+
+.card-side.front {
+	/* color: #000; */
+  /* background-color: #80B763;
+	opacity: 0.7; */
+  /* background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%); */
+}
+
+.card:hover .card-side.front {
+  transform: rotateY(180deg);
+}
+
+.card:hover .card-side.back {
+  transform: rotateY(0deg);
+}
 
 
 

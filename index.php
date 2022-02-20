@@ -137,7 +137,7 @@
 					размера <br>
 					стаканчиков
 				</h3>
-			</div>
+			</div> 
 
 			<div class="card-info card-info_yellow how-work-info how-work-icon-02 _shadow">
 				<h3>
@@ -187,37 +187,107 @@
 					наши стаканчики
 				</h2>
 				<div class="advant__card-row d-flex">
-					<div class="card-info card-info_yellow advant-info advant-icon-01 _shadow">
+
+				<div class="card advant-info">
+      		<div class="card-side front card-info card-info_yellow advant-info advant-icon-01 _shadow">
+						<h3>
+							Определяем <br>
+							размер <br>
+							тиража
+						</h3>
+      		</div>
+      		<div class="card-side back">
+						<h3>
+							Определяем <br>
+							размер <br>
+							тиража
+						</h3>
+      		</div>
+    		</div>
+
+					<!-- <div class="card-info card-info_yellow advant-info advant-icon-01 _shadow">
 						<h3>
 							Новейшая <br>
 							производственная <br>
 							линия
 						</h3>
-					</div>
+					</div> -->
 
-					<div class="card-info advant-info advant-icon-02">
+					<div class="card advant-info">
+      			<div class="card-side front card-info advant-info advant-icon-02">
+							<h3>
+								Экологически <br>
+								чистое материалы <br>
+								и сырье
+							</h3>
+      			</div>
+      			<div class="card-side back">
+							<h3>
+								Экологически <br>
+								чистое материалы <br>
+								и сырье
+							</h3>
+      			</div>
+    			</div>
+
+					<!-- <div class="card-info advant-info advant-icon-02">
 						<h3>
 							Экологически <br>
 							чистое материалы <br>
 							и сырье
 						</h3>
-					</div>
-
+					</div> -->
+<!-- 
 					<div class="card-info advant-info advant-icon-03">
 						<h3>
 							Высокая мощность <br>
 							производственной <br>
 							линии
 						</h3>
-					</div>
+					</div> -->
 
-					<div class="card-info advant-info advant-icon-04">
+					<div class="card advant-info">
+      			<div class="card-side front card-info advant-info advant-icon-03">
+						<h3>
+							Высокая мощность <br>
+							производственной <br>
+							линии
+						</h3>
+      			</div>
+      			<div class="card-side back">
+						<h3>
+							Высокая мощность <br>
+							производственной <br>
+							линии
+						</h3>
+      			</div>
+    			</div>
+
+					<!-- <div class="card-info advant-info advant-icon-04">
 						<h3>
 							Квалифицированный <br>
 							и ответственный <br>
 							персонал
 						</h3>
-					</div>
+					</div> -->
+
+					<div class="card advant-info">
+      			<div class="card-side front card-info advant-info advant-icon-04">
+						<h3>
+							Квалифицированный <br>
+							и ответственный <br>
+							персонал
+						</h3>
+      			</div>
+      			<div class="card-side back">
+						<h3>
+							Квалифицированный <br>
+							и ответственный <br>
+							персонал
+						</h3>
+      			</div>
+    			</div>
+					
 				</div>
 			</div>
 		</div>
