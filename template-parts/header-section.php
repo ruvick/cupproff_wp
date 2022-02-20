@@ -4,18 +4,20 @@
 		<div class="_container">
 			<div class="header__row">
 				<div class="header__top-contacts">
-					<a href="tel:88004882222" class="contacts__phone header__phone">8 800 488 22 22</a>
-					<a href="mailto:email@ya.ru" class="contacts__phone header__mail">email@ya.ru</a>
+				<? $tel = carbon_get_theme_option("as_phones_1"); 
+					if (!empty($tel)){?>
+          <a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>" class="contacts__phone header__phone"><? echo $tel; ?></a>
+        <?}?> 
+				<? $mail = carbon_get_theme_option("as_email"); 
+					if (!empty($mail)){?>
+          <a href="mailto:<? echo $mail; ?>" class="header__mail"><? echo $mail; ?></a>
+        <?}?> 
 				</div>
 				<div class="header__top-social soc-block-icon menu__soc-block-icon">
-					<a href="#" class="soc-block-icon-link menu__soc-block-icon-link menu__soc-icon-1"
-						aria-label="Иконка соцсети"></a>
-					<a href="#" class="soc-block-icon-link menu__soc-block-icon-link menu__soc-icon-2"
-						aria-label="Иконка соцсети"></a>
-					<a href="#" class="soc-block-icon-link menu__soc-block-icon-link menu__soc-icon-3"
-						aria-label="Иконка соцсети"></a>
-					<a href="#" class="soc-block-icon-link menu__soc-block-icon-link menu__soc-icon-4"
-						aria-label="Иконка соцсети"></a>
+					<a href="<?php echo carbon_get_theme_option('as_insta'); ?>" class="soc-block-icon-link menu__soc-block-icon-link menu__soc-icon-1" aria-label="Иконка соцсети"></a>
+					<a href="<?php echo carbon_get_theme_option('as_vk'); ?>" class="soc-block-icon-link menu__soc-block-icon-link menu__soc-icon-2" aria-label="Иконка соцсети"></a>
+					<a href="<?php echo carbon_get_theme_option('as_whatsapp'); ?>" class="soc-block-icon-link menu__soc-block-icon-link menu__soc-icon-3" aria-label="Иконка соцсети"></a>
+					<a href="<?php echo carbon_get_theme_option('as_telegr'); ?>" class="soc-block-icon-link menu__soc-block-icon-link menu__soc-icon-4" aria-label="Иконка соцсети"></a>
 				</div>
 			</div>
 		</div>
@@ -24,8 +26,7 @@
 	<div class="header__bottom">
 		<div class="_container">
 			<div class="header__row">
-				<a href="index.html" class="logo-icon header__logo" aria-label="Логотип"></a>
-				<!-- <? bloginfo("url"); ?> -->
+				<a href="<? bloginfo("url"); ?>" class="logo-icon header__logo" aria-label="Логотип"></a>
 				<ul class="header__bottom-menu-list">
 					<li><a href="#">Каталог</a></li>
 					<li><a href="#">Производство</a></li>
