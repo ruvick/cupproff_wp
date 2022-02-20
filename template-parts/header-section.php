@@ -1,36 +1,47 @@
 <header id="header" class="header">
-	<div class="header__container _container"> 
 
-		<div class="header__row d-flex"> 
-
-			<a href="<? bloginfo("url"); ?>" class="logo-icon header__logo" aria-label="Логотип"></a>
-
-			<div class="header__navigation"> 
-
-      <? $tel = carbon_get_theme_option("as_phones_1"); 
-					if (!empty($tel)){?>
-				<div class="contacts header__contacts d-flex">
-					<p class="contacts__time-phone header__time-phone">Горячая линия</p>
-          <a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>" class="contacts__phone header__phone"><? echo $tel; ?></a>
+	<div class="header__top">
+		<div class="_container">
+			<div class="header__row">
+				<div class="header__top-contacts">
+					<a href="tel:88004882222" class="contacts__phone header__phone">8 800 488 22 22</a>
+					<a href="mailto:email@ya.ru" class="contacts__phone header__mail">email@ya.ru</a>
 				</div>
-        <a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>" class="mob-phone-icon"><? echo $tel = carbon_get_theme_option("as_phone_1"); ?></a>
-        <?}?> 
-
-				<a href="<?php echo get_permalink(15);?>" class="bascket-icon" aria-label="Корзина"><span class="bascket-icon__number bascet_counter">1</span></a>
-
-				<div class="header__menu-icon-block">
-					<p class="header__menu-icon-text">Меню</p>
-					<div class="icon-menu icon-menu_open" aria-label="Бургер меню">
-						<span></span>
-						<span></span>
-						<span></span>
-					</div>
+				<div class="header__top-social soc-block-icon menu__soc-block-icon">
+					<a href="#" class="soc-block-icon-link menu__soc-block-icon-link menu__soc-icon-1"
+						aria-label="Иконка соцсети"></a>
+					<a href="#" class="soc-block-icon-link menu__soc-block-icon-link menu__soc-icon-2"
+						aria-label="Иконка соцсети"></a>
+					<a href="#" class="soc-block-icon-link menu__soc-block-icon-link menu__soc-icon-3"
+						aria-label="Иконка соцсети"></a>
+					<a href="#" class="soc-block-icon-link menu__soc-block-icon-link menu__soc-icon-4"
+						aria-label="Иконка соцсети"></a>
 				</div>
 			</div>
-
 		</div>
-
 	</div>
+
+	<div class="header__bottom">
+		<div class="_container">
+			<div class="header__row">
+				<a href="index.html" class="logo-icon header__logo" aria-label="Логотип"></a>
+				<!-- <? bloginfo("url"); ?> -->
+				<ul class="header__bottom-menu-list">
+					<li><a href="#">Каталог</a></li>
+					<li><a href="#">Производство</a></li>
+					<li><a href="#">Клиенты</a></li>
+					<li><a href="#">Карьера</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<div class="icon-menu icon-menu_open" aria-label="Бургер меню">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</div>
+	</div>
+
 </header>
 
 <!-- Меню -->

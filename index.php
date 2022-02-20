@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<?php get_template_part('template-parts/header-index-section');?>
+<?php get_template_part('template-parts/header-section');?>
 
 <main class="page">
 
@@ -23,7 +23,7 @@
 	<picture><source srcset="<?php echo get_template_directory_uri();?>/img/bg-img/06.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/bg-img/06.png?_v=1644843902057" alt=""></picture>
 </div> -->
 
-<section id="about" class="about">
+<!-- <section id="about" class="about">
 	<div class="about__container _container">
 
 		<div class="about__row d-flex">
@@ -38,8 +38,6 @@
 						<picture><source srcset="<?php echo get_template_directory_uri();?>/img/thickness/01.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/thickness/01.png?_v=1644843902057" alt=""></picture>
 					</div>
 				</div>
-				<!-- </div> -->
-				<!-- Кнопки-стрлеки --> 
 				<div class="swiper-button swiper-button-next about__swiper-button-next"></div>
 				<div class="swiper-button swiper-button-prev about__swiper-button-prev"></div>
 			</div>
@@ -77,6 +75,55 @@
 		</div>
 
 	</div>
+</section> -->
+
+<section id="slider-main" class="slider-main">
+
+<div class="slider-bg-wrap">
+	<div class="slider-bg _swiper">
+
+		<div class="slider-bg__slide slider__slide slider__slide-01 slider-main__slide">
+			<div class="nuar_blk"></div>
+			<div class="slider-bg__container _container">
+				<h1 class="slider-bg__title">
+					БРЕНДОВАНЫЕ СТАКАНЫ <br>
+					ДЛЯ ВАШЕГО БИЗНЕСА
+				</h1>
+				<a href="#callback" class="slider-bg__link btn _popup-link">Заказать</a>
+			</div>
+		</div>
+
+		<div class="slider-bg__slide slider__slide slider__slide-02 slider-main__slide">
+			<div class="nuar_blk"></div>
+			<div class="slider-bg__container _container">
+				<h1 class="slider-bg__title">
+					БРЕНДОВАНЫЕ СТАКАНЫ <br>
+					ДЛЯ ВАШЕГО БИЗНЕСА
+				</h1>
+				<a href="#callback" class="slider-bg__link btn _popup-link">Заказать</a>
+			</div>
+		</div>
+
+		<div class="slider-bg__slide slider__slide slider__slide-03 slider-main__slide">
+			<div class="nuar_blk"></div>
+			<div class="slider-bg__container _container">
+				<h1 class="slider-bg__title">
+					БРЕНДОВАНЫЕ СТАКАНЫ <br>
+					ДЛЯ ВАШЕГО БИЗНЕСА
+				</h1>
+				<a href="#callback" class="slider-bg__link btn _popup-link">Заказать</a>
+			</div>
+		</div>
+
+	</div>
+	<div class="slider-bg__swiper-button-block swiper-button-block">
+		<div class="_container">
+			<div class="swiper-button swiper-button-next slider-main-next"></div>
+			<div class="swiper-button swiper-button-prev slider-main-prev"></div>
+		</div>
+	</div>
+</div>
+
 </section>
 
 <section id="how-work" class="how-work">
