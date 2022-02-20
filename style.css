@@ -1046,10 +1046,11 @@ body.ie ._ibg img {
   position: absolute;
   top: 50%;
   z-index: 5000;
-  width: 40px;
-  height: 40px;
-  border: 1px solid #161615;
-  border-radius: 50%;
+  width: 63px;
+  height: 63px;
+  border: 1px solid #cccccc;
+  background: #cccccc;
+  /* border-radius: 50%; */
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1075,7 +1076,7 @@ body.ie ._ibg img {
 }
 
 .swiper-button-next {
-  left: -2%;
+  left: -4%;
 }
 
 .swiper-button-next:before {
@@ -1083,7 +1084,7 @@ body.ie ._ibg img {
 }
 
 .swiper-button-prev {
-  right: 8%;
+  right: 6%;
 }
 
 .swiper-button-prev:before {
@@ -1952,14 +1953,15 @@ body.ie ._ibg img {
 }
 
 .header__phone {
+  font-size: 14px;
   margin-right: 20px;
 }
 
 .header__phone::before {
   content: "";
   float: left;
-  width: 15px;
-  height: 15px;
+  width: 12px;
+  height: 12px;
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -1967,15 +1969,20 @@ body.ie ._ibg img {
   margin-right: 8px;
 }
 
+.header__mail {
+  font-size: 14px;
+}
+
 .header__mail::before {
   content: "";
   float: left;
-  width: 15px;
-  height: 15px;
+  width: 12px;
+  height: 12px;
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: 100%;
   background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgZGF0YS1uYW1lPSJMaXZlbGxvIDEiIGlkPSJMaXZlbGxvXzEiIHZpZXdCb3g9IjAgMCAxMjggMTI4IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjx0aXRsZS8+PHBhdGggZD0iTTExNi43MywzMS44M2EzLDMsMCwwLDAtNC4yLS42MUw2NC4xNCw2Ny4zNGExLDEsMCwwLDEtMS4yLDBMMTUuNSwzMS4wNmEzLDMsMCwxLDAtMy42NCw0Ljc3TDQ5LjE2LDY0LjM2LDEyLjI3LDkyLjE2QTMsMywwLDEsMCwxNS44OCw5N0w1NC4xMSw2OC4xNGw1LjE4LDRhNyw3LDAsMCwwLDguNDMuMDZsNS40NC00LjA2TDExMS44NCw5N2EzLDMsMCwxLDAsMy41OS00LjgxTDc4LjE3LDY0LjM1LDExNi4xMiwzNkEzLDMsMCwwLDAsMTE2LjczLDMxLjgzWiIvPjxwYXRoIGQ9Ik0xMTMsMTlIMTVBMTUsMTUsMCwwLDAsMCwzNFY5NGExNSwxNSwwLDAsMCwxNSwxNWg5OGExNSwxNSwwLDAsMCwxNS0xNVYzNEExNSwxNSwwLDAsMCwxMTMsMTlabTksNzVhOSw5LDAsMCwxLTksOUgxNWE5LDksMCwwLDEtOS05VjM0YTksOSwwLDAsMSw5LTloOThhOSw5LDAsMCwxLDksOVoiLz48L3N2Zz4=");
+  margin-top: 2px;
   margin-right: 8px;
 }
 
