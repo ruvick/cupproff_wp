@@ -3718,7 +3718,31 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
   transform: rotateY(0deg);
 }
 
+.sliders {
+	padding: 65px 0;
+}
 
+.sliders__title {
+	margin-bottom: 35px;
+}
+
+.sliders__wrap {
+	display: flex;
+	justify-content: space-between;
+}
+.sliders__item {
+	width: 350px;
+	/* // height: 350px; */
+	overflow: hidden;
+	/* // border: 1px solid green; */
+}
+.sliders-sl {
+
+}
+.sliders__item-img {
+	/* // height: 350px; */
+	/* // border: 1px solid #000; */
+}
 
 
 

@@ -186,6 +186,63 @@
 	</div>
 </section>
 
+<section id="sliders" class="sliders">
+				<div class="_container">
+
+				<h2 class="sliders__title">Однослойные стаканы</h2>
+
+					<div class="sliders__wrap">
+
+						<div class="sliders__item sliders-sl _swiper">
+							<div class="sliders__item-img slider-slide">
+								<picture><source srcset="<?php echo get_template_directory_uri();?>/img/sliders/1-1.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/sliders/1-1.png?_v=1645451540731" alt=""></picture>
+							</div>
+							<div class="sliders__item-img slider-slide">
+								<picture><source srcset="<?php echo get_template_directory_uri();?>/img/sliders/1-2.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/sliders/1-2.png?_v=1645451540731" alt=""></picture>
+							</div>
+						</div>
+
+						<div class="sliders__item sliders-sl _swiper">
+							<div class="sliders__item-img">
+								<picture><source srcset="<?php echo get_template_directory_uri();?>/img/sliders/2-1.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/sliders/2-1.png?_v=1645451540731" alt=""></picture>
+							</div>
+							<div class="sliders__item-img">
+								<picture><source srcset="<?php echo get_template_directory_uri();?>/img/sliders/2-2.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/sliders/2-2.png?_v=1645451540731" alt=""></picture>
+							</div>
+						</div>
+
+						<div class="sliders__item">
+							<div class="sliders__item-img">
+								<picture><source srcset="<?php echo get_template_directory_uri();?>/img/sliders/3.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/sliders/3.png?_v=1645451540731" alt=""></picture>
+							</div>
+						</div>
+
+						<div class="sliders__item sliders-sl _swiper">
+							<div class="sliders__item-img">
+								<picture><source srcset="<?php echo get_template_directory_uri();?>/img/sliders/4-1.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/sliders/4-1.png?_v=1645451540731" alt=""></picture>
+							</div>
+							<div class="sliders__item-img">
+								<picture><source srcset="<?php echo get_template_directory_uri();?>/img/sliders/4-2.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/sliders/4-2.png?_v=1645451540731" alt=""></picture>
+							</div>
+						</div>
+
+						<div class="sliders__item">
+							<div class="sliders__item-img">
+								<picture><source srcset="<?php echo get_template_directory_uri();?>/img/sliders/5.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/sliders/5.png?_v=1645451540731" alt=""></picture>
+							</div>
+						</div>
+
+						<div class="sliders__item">
+							<div class="sliders__item-img">
+								<picture><source srcset="<?php echo get_template_directory_uri();?>/img/sliders/6.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/sliders/6.png?_v=1645451540731" alt=""></picture>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+
 <section id="advant" class="advant">
 	<div class="advant__container _container">
 		<div class="advant__row d-flex">

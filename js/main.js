@@ -325,6 +325,68 @@ let sliderBg = new Swiper('.slider-bg', {
 
 
 // Сюда пишем класс нашего слайдера и меняем переменную
+let slidersSl = new Swiper('.sliders-sl', {
+	// effect: 'fade',
+	autoplay: {
+		delay: 1500,
+		disableOnInteraction: false,
+	},
+
+	observer: true,
+	observeParents: true,
+	slidesPerView: 1,
+	spaceBetween: 0,
+	// autoHeight: true,
+	speed: 1000,
+	//touchRatio: 0,
+	//simulateTouch: false,
+	loop: true,
+	//preloadImages: false,
+	//lazy: true,
+	// Dotts
+	//pagination: {
+	//	el: '.slider-quality__pagging',
+	//	clickable: true,
+	//},
+	// Arrows
+	navigation: {
+		nextEl: '.slider-main-next',
+		prevEl: '.slider-main-prev',
+	},
+	/*
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+			spaceBetween: 0,
+			autoHeight: true,
+		},
+		768: {
+			slidesPerView: 2,
+			spaceBetween: 20,
+		},
+		992: {
+			slidesPerView: 3,
+			spaceBetween: 20,
+		},
+		1268: {
+			slidesPerView: 4,
+			spaceBetween: 30,
+		},
+	},
+	*/
+	on: {
+		lazyImageReady: function () {
+			ibg();
+		},
+	}
+	// And if we need scrollbar
+	//scrollbar: {
+	//	el: '.swiper-scrollbar',
+	//},
+});
+
+
+// Сюда пишем класс нашего слайдера и меняем переменную
 let productSlider = new Swiper('.product__slider', {
 	// effect: 'fade',
 	// autoplay: {
