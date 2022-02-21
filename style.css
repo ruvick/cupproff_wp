@@ -3740,8 +3740,20 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
 
 }
 .sliders__item-img {
+  position: relative;
 	/* // height: 350px; */
 	/* // border: 1px solid #000; */
+}
+
+.sliders__item-img-sticker {
+  position: absolute;
+  top: 13%;
+  left: 28%;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 20px 10px 20px;
+  background: #E6E6E6;
+  border-radius: 25px;
 }
 
 .slider-bg__swiper-button-block {
@@ -3757,6 +3769,28 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
   font-size: 68px;
   font-weight: 900;
 }
+
+/* .sliders__item-01 {
+
+}
+.sliders__item-02 {
+  height: 400px;
+}
+.sliders__item-03 {
+  height: 450px;
+}
+.sliders__item-04 {
+  height: 520px;
+}
+.sliders__item-05 {
+  height: 560px;
+}
+.sliders__item-06 {
+  height: 600px;
+} */
+
+
+
 
 
 

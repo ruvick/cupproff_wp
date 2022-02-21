@@ -193,48 +193,57 @@
 
 					<div class="sliders__wrap">
 
-						<div class="sliders__item sliders-sl _swiper">
+						<div class="sliders__item sliders__item-01 sliders-sl _swiper">
 							<div class="sliders__item-img slider-slide">
+								<div class="sliders__item-img-sticker">175 мл</div>
 								<picture><source srcset="<?php echo get_template_directory_uri();?>/img/sliders/1-1.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/sliders/1-1.png?_v=1645451540731" alt=""></picture>
 							</div>
 							<div class="sliders__item-img slider-slide">
+								<div class="sliders__item-img-sticker">175 мл</div>
 								<picture><source srcset="<?php echo get_template_directory_uri();?>/img/sliders/1-2.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/sliders/1-2.png?_v=1645451540731" alt=""></picture>
 							</div>
 						</div>
 
-						<div class="sliders__item sliders-sl _swiper">
+						<div class="sliders__item sliders__item-02">
 							<div class="sliders__item-img">
+								<div class="sliders__item-img-sticker">180 мл</div>
 								<picture><source srcset="<?php echo get_template_directory_uri();?>/img/sliders/2-1.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/sliders/2-1.png?_v=1645451540731" alt=""></picture>
-							</div>
-							<div class="sliders__item-img">
-								<picture><source srcset="<?php echo get_template_directory_uri();?>/img/sliders/2-2.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/sliders/2-2.png?_v=1645451540731" alt=""></picture>
 							</div>
 						</div>
 
-						<div class="sliders__item">
-							<div class="sliders__item-img">
+						<div class="sliders__item sliders__item-03 sliders-sl _swiper">
+							<div class="sliders__item-img slider-slide">
+								<div class="sliders__item-img-sticker">250 мл</div>
+								<picture><source srcset="<?php echo get_template_directory_uri();?>/img/sliders/3.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/sliders/3.png?_v=1645451540731" alt=""></picture>
+							</div>
+							<div class="sliders__item-img slider-slide">
+								<div class="sliders__item-img-sticker">250 мл</div>
 								<picture><source srcset="<?php echo get_template_directory_uri();?>/img/sliders/3.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/sliders/3.png?_v=1645451540731" alt=""></picture>
 							</div>
 						</div>
 
-						<div class="sliders__item sliders-sl _swiper">
+						<div class="sliders__item sliders__item-04">
 							<div class="sliders__item-img">
+								<div class="sliders__item-img-sticker">350 мл</div>
 								<picture><source srcset="<?php echo get_template_directory_uri();?>/img/sliders/4-1.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/sliders/4-1.png?_v=1645451540731" alt=""></picture>
 							</div>
-							<div class="sliders__item-img">
+						</div>
+
+						<div class="sliders__item sliders__item-05 sliders-sl _swiper">
+							<div class="sliders__item-img slider-slide">
+								<div class="sliders__item-img-sticker">400 мл</div>
+								<picture><source srcset="<?php echo get_template_directory_uri();?>/img/sliders/4-2.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/sliders/4-2.png?_v=1645451540731" alt=""></picture>
+							</div>
+							<div class="sliders__item-img slider-slide">
+								<div class="sliders__item-img-sticker">400 мл</div>
 								<picture><source srcset="<?php echo get_template_directory_uri();?>/img/sliders/4-2.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/sliders/4-2.png?_v=1645451540731" alt=""></picture>
 							</div>
 						</div>
 
-						<div class="sliders__item">
+						<div class="sliders__item sliders__item-06">
 							<div class="sliders__item-img">
+								<div class="sliders__item-img-sticker">480 мл</div>
 								<picture><source srcset="<?php echo get_template_directory_uri();?>/img/sliders/5.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/sliders/5.png?_v=1645451540731" alt=""></picture>
-							</div>
-						</div>
-
-						<div class="sliders__item">
-							<div class="sliders__item-img">
-								<picture><source srcset="<?php echo get_template_directory_uri();?>/img/sliders/6.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/sliders/6.png?_v=1645451540731" alt=""></picture>
 							</div>
 						</div>
 
