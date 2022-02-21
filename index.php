@@ -86,7 +86,7 @@
 			<div class="nuar_blk"></div>
 			<div class="slider-bg__container _container">
 				<h1 class="slider-bg__title">
-					CupProff <br>одноразовые <br>бумажные<br>
+					<span>CupProff</span>	 <br>одноразовые <br>бумажные<br>
 					стаканчики
 				</h1>
 				<a href="#callback" class="slider-bg__link btn _popup-link">Заказать</a>

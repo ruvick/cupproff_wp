@@ -1048,8 +1048,8 @@ body.ie ._ibg img {
   z-index: 5000;
   width: 63px;
   height: 63px;
-  border: 1px solid #cccccc;
-  background: #cccccc;
+  /* border: 1px solid #cccccc; */
+  background: #cccccca0;
   /* border-radius: 50%; */
   cursor: pointer;
   display: -webkit-box;
@@ -1076,7 +1076,7 @@ body.ie ._ibg img {
 }
 
 .swiper-button-next {
-  left: -4%;
+  left: -5%;
 }
 
 .swiper-button-next:before {
@@ -1084,7 +1084,7 @@ body.ie ._ibg img {
 }
 
 .swiper-button-prev {
-  right: 6%;
+  right: 5%;
 }
 
 .swiper-button-prev:before {
@@ -3744,9 +3744,19 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
 	/* // border: 1px solid #000; */
 }
 
+.slider-bg__swiper-button-block {
+  opacity: 0;
+}
 
+.slider-main:hover .slider-bg__swiper-button-block {
+  opacity: 1;
+  transition: all 0.5s ease;
+}
 
-
+.slider-bg__title span {
+  font-size: 68px;
+  font-weight: 900;
+}
 
 
 
