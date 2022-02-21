@@ -2666,6 +2666,9 @@ body.ie ._ibg img {
           justify-content: space-between;
 }
 
+._no-webp .slider__slide-00{
+  background: url("img/sl-main-00.jpg"); }
+
 ._no-webp .slider__slide-01{
   background: url("img/sl-main-01.jpg"); }
 
@@ -5227,6 +5230,8 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
 }
 
 ._webp .parallax{ background: url(img/smart-conven.webp) center/cover no-repeat fixed; }
+
+._webp .slider__slide-00{ background: url(img/sl-main-00.webp); }
 
 ._webp .slider__slide-01{ background: url(img/sl-main-01.webp); }
 

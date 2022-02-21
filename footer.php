@@ -60,7 +60,7 @@
 				<a href="<?php echo carbon_get_theme_option('as_telegr'); ?>" class="soc-block-icon-link footer__soc-block-icon-link soc-icon-3" aria-label="Иконка соцсети"></a>
 				<a href="<?php echo carbon_get_theme_option('as_whatsapp'); ?>" class="soc-block-icon-link footer__soc-block-icon-link soc-icon-4" aria-label="Иконка соцсети"></a>
 			</div>
-			<p class="footer__copyright">CupProff 2021 ©</p>
+			<p class="footer__copyright">CupProff 2010 ©</p>
 		</div>
 
 	</div>
