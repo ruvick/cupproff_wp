@@ -189,7 +189,7 @@
 <section id="sliders" class="sliders">
 				<div class="_container">
 
-				<h2 class="sliders__title">Однослойные стаканы</h2>
+				<h2 class="sliders__title">Бумажные стаканчики с Вашим дизайном</h2>
 
 					<div class="sliders__wrap">
 
