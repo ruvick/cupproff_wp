@@ -186,72 +186,6 @@
 	</div>
 </section>
 
-<section id="sliders" class="sliders">
-				<div class="_container">
-
-				<h2 class="sliders__title">Бумажные стаканчики с Вашим дизайном</h2>
-
-					<div class="sliders__wrap">
-
-						<div class="sliders__item sliders__item-01 sliders-sl _swiper">
-							<div class="sliders__item-img slider-slide">
-								<div class="sliders__item-img-sticker">175 мл</div>
-									<img src="<?php echo get_template_directory_uri();?>/img/sliders/1-1.png" alt="">							
-								</div>
-							<div class="sliders__item-img slider-slide">
-								<div class="sliders__item-img-sticker">175 мл</div>
-									<img src="<?php echo get_template_directory_uri();?>/img/sliders/1-2.png" alt="">							
-								</div>
-						</div>
-
-						<div class="sliders__item sliders__item-02">
-							<div class="sliders__item-img">
-								<div class="sliders__item-img-sticker">180 мл</div>
-									<img src="<?php echo get_template_directory_uri();?>/img/sliders/2-1.png" alt="">	
-								</div>
-						</div>
-
-						<div class="sliders__item sliders__item-03 sliders-sl _swiper">
-							<div class="sliders__item-img slider-slide">
-								<div class="sliders__item-img-sticker">250 мл</div>
-									<img src="<?php echo get_template_directory_uri();?>/img/sliders/3.png" alt="">							
-								</div>
-							<div class="sliders__item-img slider-slide">
-								<div class="sliders__item-img-sticker">250 мл</div>
-								<img src="<?php echo get_template_directory_uri();?>/img/sliders/3.png" alt="">							
-							</div>
-						</div>
-
-						<div class="sliders__item sliders__item-04">
-							<div class="sliders__item-img">
-								<div class="sliders__item-img-sticker">350 мл</div>
-								<img src="<?php echo get_template_directory_uri();?>/img/sliders/4-1.png" alt="">							
-							</div>
-						</div>
-
-						<div class="sliders__item sliders__item-05 sliders-sl _swiper">
-							<div class="sliders__item-img slider-slide">
-								<div class="sliders__item-img-sticker">400 мл</div>
-								<img src="<?php echo get_template_directory_uri();?>/img/sliders/4-2.png" alt="">							
-							</div>
-							<div class="sliders__item-img slider-slide">
-								<div class="sliders__item-img-sticker">400 мл</div>
-								<img src="<?php echo get_template_directory_uri();?>/img/sliders/4-2.png" alt="">							
-							</div>
-						</div>
-
-						<div class="sliders__item sliders__item-06">
-							<div class="sliders__item-img">
-								<div class="sliders__item-img-sticker">480 мл</div>
-								<img src="<?php echo get_template_directory_uri();?>/img/sliders/5.png" alt="">							
-							</div>
-						</div>
-
-					</div>
-
-				</div>
-			</section>
-
 <section id="advant" class="advant">
 	<div class="advant__container _container">
 		<div class="advant__row d-flex">
@@ -371,7 +305,79 @@
 	</div>
 </section>
 
-<section id="offer-sec" class="offer-sec">
+<section id="sliders" class="sliders">
+				<div class="_container">
+
+				<h2 class="sliders__title">Бумажные стаканчики с Вашим дизайном</h2>
+
+					<div class="sliders__wrap">
+
+						<div class="sliders__item sliders__item-01 sliders-sl _swiper">
+							<div class="sliders__item-img slider-slide">
+								<div class="sliders__item-img-sticker">175 мл</div>
+									<img src="<?php echo get_template_directory_uri();?>/img/sliders/1-1.png" alt="">							
+								</div>
+							<div class="sliders__item-img slider-slide">
+								<div class="sliders__item-img-sticker">175 мл</div>
+									<img src="<?php echo get_template_directory_uri();?>/img/sliders/1-2.png" alt="">							
+								</div>
+						</div>
+
+						<div class="sliders__item sliders__item-02">
+							<div class="sliders__item-img">
+								<div class="sliders__item-img-sticker">180 мл</div>
+									<img src="<?php echo get_template_directory_uri();?>/img/sliders/2-1.png" alt="">	
+								</div>
+						</div>
+
+						<div class="sliders__item sliders__item-03 sliders-sl _swiper">
+							<div class="sliders__item-img slider-slide">
+								<div class="sliders__item-img-sticker">250 мл</div>
+									<img src="<?php echo get_template_directory_uri();?>/img/sliders/3.png" alt="">							
+								</div>
+							<div class="sliders__item-img slider-slide">
+								<div class="sliders__item-img-sticker">250 мл</div>
+								<img src="<?php echo get_template_directory_uri();?>/img/sliders/3.png" alt="">							
+							</div>
+						</div>
+
+						<div class="sliders__item sliders__item-04">
+							<div class="sliders__item-img">
+								<div class="sliders__item-img-sticker">350 мл</div>
+								<img src="<?php echo get_template_directory_uri();?>/img/sliders/4-1.png" alt="">							
+							</div>
+						</div>
+
+						<div class="sliders__item sliders__item-05 sliders-sl _swiper">
+							<div class="sliders__item-img slider-slide">
+								<div class="sliders__item-img-sticker">400 мл</div>
+								<img src="<?php echo get_template_directory_uri();?>/img/sliders/4-2.png" alt="">							
+							</div>
+							<div class="sliders__item-img slider-slide">
+								<div class="sliders__item-img-sticker">400 мл</div>
+								<img src="<?php echo get_template_directory_uri();?>/img/sliders/4-2.png" alt="">							
+							</div>
+						</div>
+
+						<div class="sliders__item sliders__item-06">
+							<div class="sliders__item-img">
+								<div class="sliders__item-img-sticker">480 мл</div>
+								<img src="<?php echo get_template_directory_uri();?>/img/sliders/5.png" alt="">							
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+
+			<section id="sliders" class="sliders">
+				<div class="_container">
+
+				</div>
+			</section>
+
+<!-- <section id="offer-sec" class="offer-sec">
 	<div class="_container">
 		<h2 class="title">
 			Мы предлагаем бумажные стаканчики <br>
@@ -455,9 +461,9 @@
 		</div> 
 		
 	</div>
-</section>
+</section> -->
 
-<?php get_template_part('template-parts/offer-thickness');?>
+<!-- <?php get_template_part('template-parts/offer-thickness');?> -->
 
 <?php get_template_part('template-parts/payment-info');?>
 
