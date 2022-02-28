@@ -100,6 +100,16 @@
 			</div>
 		</div>
 
+		<div class="slider-bg__slide slider__slide slider__slide-04 slider-main__slide">
+			<div class="nuar_blk"></div>
+			<div class="slider-bg__container _container">
+				<h1 class="slider-bg__title">
+					<span>Бумажные стаканчики</span>	 <br> с вашим индивидуальным дизайном
+				</h1>
+				<a href="#callback" class="slider-bg__link btn _popup-link">Заказать</a>
+			</div>
+		</div>
+
 		<div class="slider-bg__slide slider__slide slider__slide-01 slider-main__slide">
 			<div class="nuar_blk"></div>
 			<div class="slider-bg__container _container">
