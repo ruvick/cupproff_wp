@@ -10,7 +10,6 @@
 		<a href="#" class="widget__link widget__link-03"></a>
 		<a href="#" class="widget__link widget__link-04"></a>
 	</div>
-
 			<!-- <div class="bg-img bg-img-01">
 	<picture><source srcset="<?php echo get_template_directory_uri();?>/img/bg-img/01.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/bg-img/01.png?_v=1644843902057" alt=""></picture>  
 </div>
