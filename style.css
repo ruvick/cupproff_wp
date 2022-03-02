@@ -3822,20 +3822,21 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
 }
 .terms__descp {
   /* flex: 1 1 auto; */
-  flex: 0 1 65%;
+  flex: 0 1 60%;
 }
 .terms__title {
   margin-bottom: 38px;
 }
 .terms__subtitle {
-  font-size: 24px;
-  line-height: 35px;
+  font-size: 20px;
+  line-height: 28px;
 }
 .terms__img {
   position: absolute;
-  top: -72%;
+  top: -80%;
   right: -20%;
-  max-width: 1100px;
+  z-index: 5;
+  max-width: 950px;
   width: 100%;
 }
 
