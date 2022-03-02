@@ -4,7 +4,7 @@
 
 <main class="page">
 
-	<div class="widget">
+	<div class="widget"> 
 		<a href="#" class="widget__link widget__link-01"></a>
 		<a href="#" class="widget__link widget__link-02"></a>
 		<a href="#" class="widget__link widget__link-03"></a>

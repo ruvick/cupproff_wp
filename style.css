@@ -3941,6 +3941,7 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
   -moz-animation: waves 0s infinite;
   -webkit-animation: waves 0s infinite;
   -o-animation: waves 0s infinite;
+  box-shadow: none;
 }
 
 @keyframes waves {
