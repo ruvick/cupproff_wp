@@ -27,13 +27,8 @@
 		<div class="_container">
 			<div class="header__row">
 				<a href="<? bloginfo("url"); ?>" class="logo-icon header__logo" aria-label="Логотип"></a>
-				<ul class="header__bottom-menu-list">
-					<li><a href="#">Каталог</a></li>
-					<li><a href="#">Производство</a></li>
-					<li><a href="#">Клиенты</a></li>
-					<li><a href="#">Карьера</a></li>
-					<li><a href="#">Контакты</a></li>
-				</ul>
+				<?php wp_nav_menu( array('theme_location' => 'menu_main','menu_class' => 'header__bottom-menu-list',
+					'container_class' => 'header__bottom-menu-list','container' => false )); ?>
 				<div class="icon-menu icon-menu_open" aria-label="Бургер меню">
 					<span></span>
 					<span></span>
