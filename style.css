@@ -1922,8 +1922,8 @@ body.ie ._ibg img {
   position: relative;
   z-index: 50000;
   background: #fff;
-  -webkit-box-shadow: 0px 14px 18px -19px #000000;
-          box-shadow: 0px 14px 18px -19px #000000;
+  -webkit-box-shadow: 0px 14px 10px -20px #000000;
+  box-shadow: 0px 14px 10px -20px #000000;
 }
 
 .header__row {
