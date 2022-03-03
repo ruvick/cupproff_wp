@@ -416,9 +416,12 @@
 				<div class="_container">
 					<h2 class="finished-prod__title">Готовая продукция со склада</h2>
 						<div class="finished-prod__button-block btnSticker-block">
-							<a href="#" class="finished-prod__btnSticker btnSticker">175 мл</a>
-							<a href="#" class="finished-prod__btnSticker btnSticker">180 мл</a>
-							<a href="#" class="finished-prod__btnSticker btnSticker">250 мл</a>
+							<a href="<?php echo get_category_link(4);?>" class="finished-prod__btnSticker btnSticker">175 мл</a>
+							<a href="<?php echo get_category_link(5);?>" class="finished-prod__btnSticker btnSticker">180 мл</a>
+							<a href="<?php echo get_category_link(6);?>" class="finished-prod__btnSticker btnSticker">250 мл</a>
+							<a href="<?php echo get_category_link(7);?>" class="finished-prod__btnSticker btnSticker">350 мл</a>
+							<a href="<?php echo get_category_link(8);?>" class="finished-prod__btnSticker btnSticker">400 мл</a>
+							<a href="<?php echo get_category_link(9);?>" class="finished-prod__btnSticker btnSticker">400 мл</a>
 						</div>
 				
 						<div class="finished-prod__card-row products-sec__row card__row d-flex">
