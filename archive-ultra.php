@@ -43,27 +43,12 @@
 		</div>
 
 		<div class="products-sec__row card__row d-flex">
-
-		<?
-		$args = array(
-			// 'posts_per_page' => 8,
-			'post_type' => 'ultra',
-			'tax_query' => array(
-				array(
-					'taxonomy' => 'ultracat',
-					'field' => 'id',
-					'terms' => 'ultracat',
-				)
-			)
-		);
-		$query = new WP_Query($args);
-		foreach( $query->posts as $post ){
-			$query->the_post();
-			get_template_part('template-parts/product-elem');
-		}  
-		wp_reset_postdata();
-		?>
-
+		<?php
+				while(have_posts()):
+					the_post();
+					get_template_part('template-parts/product-elem');  
+				endwhile;
+				?>
 		</div>
 
 		<div class="pagging">
