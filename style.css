@@ -3055,7 +3055,7 @@ body.ie ._ibg img {
 
 .payment-info {
   position: relative;
-  padding: 85px 0;
+  padding: 25px 0 85px 0;
 }
 
 .payment-info__container {
@@ -3992,6 +3992,39 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
     box-shadow: 0 0 0 40px rgba(248, 212, 45, 0), 0 0 0 20px rgba(248, 212, 45, 0);
   }
 }
+
+.finished-prod {
+  padding: 85px 0;
+}
+.finished-prod__title {
+  margin-bottom: 35px;
+}
+.btnSticker-block {
+  display: flex;
+}
+.finished-prod__button-block {
+  margin-bottom: 25px;
+}
+.btnSticker {
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 20px;
+  background: #E6E6E6;
+  border-radius: 15px;
+}
+.finished-prod__btnSticker {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.finished-prod__btnSticker:last-child {
+  margin-right: 0;
+}
+.finished-prod__card-row .card__col {
+  margin-bottom: 0;
+}
+
+
+
 
 
 

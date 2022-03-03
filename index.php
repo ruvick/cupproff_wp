@@ -411,92 +411,161 @@
 				</div>
 			</section>
 
-<!-- <section id="offer-sec" class="offer-sec">
-	<div class="_container">
-		<h2 class="title">
-			Мы предлагаем бумажные стаканчики <br>
-			различного объема
-		</h2>
 
-		<div class="design-glass__row d-flex">
+			<section id="finished-prod" class="finished-prod">
+				<div class="_container">
+					<h2 class="finished-prod__title">Готовая продукция со склада</h2>
+						<div class="finished-prod__button-block btnSticker-block">
+							<a href="#" class="finished-prod__btnSticker btnSticker">175 мл</a>
+							<a href="#" class="finished-prod__btnSticker btnSticker">180 мл</a>
+							<a href="#" class="finished-prod__btnSticker btnSticker">250 мл</a>
+						</div>
+				
+						<div class="finished-prod__card-row products-sec__row card__row d-flex">
 
-			<div class="design-glass__col">
-				<a href="<?php echo get_category_link(9);?>" class="design-glass__body d-flex">
-					<div class="design-glass__volume">
-						<p class="design-glass__volume-descp">400 мл</p>
-					</div>
-					<div class="design-glass__img design-glass__img_xxl">
-						<p class="design-glass__img-descp">ВАШ <br> <span>ДИЗАЙН</span></p>
-						<p class="design-glass__volume-descp design-glass__img-volume-descp">400 мл</p>
-					</div>
-				</a>
+<div class="card__col">
+	<div class="card__body d-flex">
+		<a href="<?php echo get_permalink(26);?>" class="card__img-item">
+			<picture><source srcset="<?php echo get_template_directory_uri();?>/img/card/01.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/card/01.jpg?_v=1644843902057" alt=""></picture>
+		</a>
+		<div class="card__descp">
+			<div class="card__text">
+				<h3 class="card__title">Стаканчик "Good Day"</h3>
+				<div class="card__charect d-flex">
+					<p class="card__layer">Однослойные</p>
+					<p class="card__volume">Объем: <span>400 мл</span></p>
+				</div>
 			</div>
-
-			<div class="design-glass__col">
-				<a href="<?php echo get_category_link(8);?>" class="design-glass__body d-flex">
-					<div class="design-glass__volume">
-						<p class="design-glass__volume-descp">350 мл</p>
-					</div>
-					<div class="design-glass__img design-glass__img_xl">
-						<p class="design-glass__img-descp">ВАШ <br> <span>ДИЗАЙН</span></p>
-						<p class="design-glass__volume-descp design-glass__img-volume-descp">350 мл</p>
-					</div>
-				</a>
+			<div class="card__btn d-flex">
+				<div class="card__price-block">
+					<p class="card__price">2300 р.</p>
+					<p class="card__number">от 1000 шт</p>
+				</div>
+				<button class="card__btn-link btn" id = "btn__to-card" onclick = "add_tocart(this, 0); return false;"
+					data-price = "<?echo carbon_get_post_meta(get_the_ID(),"offer_price"); ?>"
+					data-sku = "<? echo carbon_get_post_meta(get_the_ID(),"offer_sku")?>"
+					data-size = ""
+					data-oldprice = "<? echo carbon_get_post_meta(get_the_ID(),"offer_old_price")?>"
+					data-lnk = "<? echo  get_the_permalink(get_the_ID());?>"
+					data-name = "<? echo  get_the_title();?>"
+					data-count = "1"
+					data-picture = "<?php echo wp_get_attachment_image_src($item['gal_img'], 'large')[0];?>"
+					data-picture = "<?php  $imgTm = get_the_post_thumbnail_url( get_the_ID(), "tominiatyre" ); echo empty($imgTm)?get_bloginfo("template_url")."/img/no-photo.jpg":$imgTm; ?>">
+					В корзину</button>
 			</div>
-
-			<div class="design-glass__col">
-				<a href="<?php echo get_category_link(7);?>"class="design-glass__body d-flex">
-					<div class="design-glass__volume">
-						<p class="design-glass__volume-descp">250 мл</p>
-					</div>
-					<div class="design-glass__img design-glass__img_l">
-						<p class="design-glass__img-descp">ВАШ <br> <span>ДИЗАЙН</span></p>
-						<p class="design-glass__volume-descp design-glass__img-volume-descp">250 мл</p>
-					</div>
-				</a>
-			</div>
-
-			<div class="design-glass__col">
-				<a href="<?php echo get_category_link(5);?>" class="design-glass__body d-flex">
-					<div class="design-glass__volume">
-						<p class="design-glass__volume-descp">180 мл</p>
-					</div>
-					<div class="design-glass__img design-glass__img_m">
-						<p class="design-glass__img-descp">ВАШ <br> <span>ДИЗАЙН</span></p>
-						<p class="design-glass__volume-descp design-glass__img-volume-descp">180 мл</p>
-					</div>
-				</a>
-			</div>
-
-			<div class="design-glass__col">
-				<a href="<?php echo get_category_link(11);?>" class="design-glass__body d-flex">
-					<div class="design-glass__volume">
-						<p class="design-glass__volume-descp">175 мл</p>
-					</div>
-					<div class="design-glass__img design-glass__img_s">
-						<p class="design-glass__img-descp">ВАШ <br> <span>ДИЗАЙН</span></p>
-						<p class="design-glass__volume-descp design-glass__img-volume-descp">175 мл</p>
-					</div>
-				</a>
-			</div>
-
-			<div class="design-glass__col">
-				<a href="<?php echo get_category_link(12);?>" class="design-glass__body d-flex">
-					<div class="design-glass__volume">
-						<p class="design-glass__volume-descp">110 мл</p>
-					</div>
-					<div class="design-glass__img design-glass__img_xs">
-						<p class="design-glass__img-descp">ВАШ <br> <span>ДИЗАЙН</span></p>
-						<p class="design-glass__volume-descp design-glass__img-volume-descp">110 мл</p>
-					</div>
-				</a>
-			</div>
-
-		</div> 
-		
+		</div>
 	</div>
-</section> -->
+</div>
 
+<div class="card__col">
+	<div class="card__body d-flex">
+		<a href="<?php echo get_permalink(26);?>" class="card__img-item">
+			<picture><source srcset="<?php echo get_template_directory_uri();?>/img/card/02.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/card/02.jpg?_v=1644843902057" alt=""></picture>
+		</a>
+		<div class="card__descp">
+			<div class="card__text">
+				<h3 class="card__title">Стаканчик "Good Day"</h3>
+				<div class="card__charect d-flex">
+					<p class="card__layer">Однослойные</p>
+					<p class="card__volume">Объем: <span>400 мл</span></p>
+				</div>
+			</div>
+			<div class="card__btn d-flex">
+				<div class="card__price-block">
+					<p class="card__price">2300 р.</p>
+					<p class="card__number">от 1000 шт</p>
+				</div>
+				<button class="card__btn-link btn" id = "btn__to-card" onclick = "add_tocart(this, 0); return false;"
+					data-price = "<?echo carbon_get_post_meta(get_the_ID(),"offer_price"); ?>"
+					data-sku = "<? echo carbon_get_post_meta(get_the_ID(),"offer_sku")?>"
+					data-size = ""
+					data-oldprice = "<? echo carbon_get_post_meta(get_the_ID(),"offer_old_price")?>"
+					data-lnk = "<? echo  get_the_permalink(get_the_ID());?>"
+					data-name = "<? echo  get_the_title();?>"
+					data-count = "1"
+					data-picture = "<?php echo wp_get_attachment_image_src($item['gal_img'], 'large')[0];?>"
+					data-picture = "<?php  $imgTm = get_the_post_thumbnail_url( get_the_ID(), "tominiatyre" ); echo empty($imgTm)?get_bloginfo("template_url")."/img/no-photo.jpg":$imgTm; ?>">
+					В корзину</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="card__col">
+	<div class="card__body d-flex">
+		<a href="<?php echo get_permalink(26);?>" class="card__img-item">
+			<picture><source srcset="<?php echo get_template_directory_uri();?>/img/card/03.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/card/03.jpg?_v=1644843902057" alt=""></picture>
+		</a>
+		<div class="card__descp">
+			<div class="card__text">
+				<h3 class="card__title">Стаканчик "Good Day"</h3>
+				<div class="card__charect d-flex">
+					<p class="card__layer">Однослойные</p>
+					<p class="card__volume">Объем: <span>400 мл</span></p>
+				</div>
+			</div>
+			<div class="card__btn d-flex">
+				<div class="card__price-block">
+					<p class="card__price">2300 р.</p>
+					<p class="card__number">от 1000 шт</p>
+				</div>
+				<button class="card__btn-link btn" id = "btn__to-card" onclick = "add_tocart(this, 0); return false;"
+					data-price = "<?echo carbon_get_post_meta(get_the_ID(),"offer_price"); ?>"
+					data-sku = "<? echo carbon_get_post_meta(get_the_ID(),"offer_sku")?>"
+					data-size = ""
+					data-oldprice = "<? echo carbon_get_post_meta(get_the_ID(),"offer_old_price")?>"
+					data-lnk = "<? echo  get_the_permalink(get_the_ID());?>"
+					data-name = "<? echo  get_the_title();?>"
+					data-count = "1"
+					data-picture = "<?php echo wp_get_attachment_image_src($item['gal_img'], 'large')[0];?>"
+					data-picture = "<?php  $imgTm = get_the_post_thumbnail_url( get_the_ID(), "tominiatyre" ); echo empty($imgTm)?get_bloginfo("template_url")."/img/no-photo.jpg":$imgTm; ?>">
+					В корзину</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="card__col">
+	<div class="card__body d-flex">
+		<a href="<?php echo get_permalink(26);?>" class="card__img-item">
+			<picture><source srcset="<?php echo get_template_directory_uri();?>/img/card/04.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/card/04.jpg?_v=1644843902057" alt=""></picture>
+		</a>
+		<div class="card__descp">
+			<div class="card__text">
+				<h3 class="card__title">Стаканчик "Good Day"</h3>
+				<div class="card__charect d-flex">
+					<p class="card__layer">Однослойные</p>
+					<p class="card__volume">Объем: <span>400 мл</span></p>
+				</div>
+			</div>
+			<div class="card__btn d-flex">
+				<div class="card__price-block">
+					<p class="card__price">2300 р.</p>
+					<p class="card__number">от 1000 шт</p>
+				</div>
+				<button class="card__btn-link btn" id = "btn__to-card" onclick = "add_tocart(this, 0); return false;"
+					data-price = "<?echo carbon_get_post_meta(get_the_ID(),"offer_price"); ?>"
+					data-sku = "<? echo carbon_get_post_meta(get_the_ID(),"offer_sku")?>"
+					data-size = ""
+					data-oldprice = "<? echo carbon_get_post_meta(get_the_ID(),"offer_old_price")?>"
+					data-lnk = "<? echo  get_the_permalink(get_the_ID());?>"
+					data-name = "<? echo  get_the_title();?>"
+					data-count = "1"
+					data-picture = "<?php echo wp_get_attachment_image_src($item['gal_img'], 'large')[0];?>"
+					data-picture = "<?php  $imgTm = get_the_post_thumbnail_url( get_the_ID(), "tominiatyre" ); echo empty($imgTm)?get_bloginfo("template_url")."/img/no-photo.jpg":$imgTm; ?>">
+					В корзину</button>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+				<a href="/ultra" class="finished-prod__button btn">Весь каталог</a>
+
+				</div>
+			</section>
+
+	
 <!-- <?php get_template_part('template-parts/offer-thickness');?> -->
 
 <?php get_template_part('template-parts/payment-info');?>
