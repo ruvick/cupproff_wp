@@ -2348,7 +2348,10 @@ body.ie ._ibg img {
 }
 
 .header__top-bascket-icon {
-  margin-top: 0;
+    flex: 0 0 32px;
+    height: 32px;
+    margin-right: 35px;
+    margin-top: 0;
 }
 
 .bascket-icon:before {

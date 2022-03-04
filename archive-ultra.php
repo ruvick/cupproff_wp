@@ -70,7 +70,7 @@
 	</div>
 </section>
 
-<?php get_template_part('template-parts/offer-thickness');?>
+<?php get_template_part('template-parts/terms-section');?>
 
 <?php get_template_part('template-parts/payment-info');?>
 

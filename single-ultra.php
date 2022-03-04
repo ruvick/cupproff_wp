@@ -34,7 +34,10 @@ get_header(); ?>
 
 						<div class="product__descp">
 							<div class="product__charect">
-								<p class="product__price">Цена: 2500 р. / 1000 шт.</p>
+							<? $offerPrice = carbon_get_post_meta(get_the_ID(),"offer_price");	
+									if (!empty($offerPrice)) { ?>
+										<p class="product__price">Цена: <? echo $offerPrice; ?> р. / 1000 шт.</p> 
+								<? } ?>
 								<p class="product__avail">Под заказ</p>
 								<p class="product__vendor">Артикул: 180B-01-011</p>
 								<p class="product__volume">Объем: 400 мл</p>
@@ -60,13 +63,13 @@ get_header(); ?>
   										data-picture = "<?php  $imgTm = get_the_post_thumbnail_url( get_the_ID(), "tominiatyre" ); echo empty($imgTm)?get_bloginfo("template_url")."/img/no-photo.jpg":$imgTm; ?>">
 									В корзину</button>
 							</form>
-							<div class="product__text">
-								<h3>Краткое описание</h3>
-								<p>
-									Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее 
-									осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.
-								</p>
-							</div>
+							<? $offerSmdescr = carbon_get_post_meta(get_the_ID(),"offer_smile_descr");	
+								if (!empty($offerSmdescr)) { ?>
+									<div class="product__text">
+										<h3>Краткое описание</h3>
+											<p><? echo $offerSmdescr; ?></p>
+									</div>
+							<? } ?>
 						</div>
 					</div>
 
