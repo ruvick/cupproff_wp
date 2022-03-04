@@ -10,7 +10,7 @@
 								<p class="card__layer">Однослойные</p>
 								<p class="card__volume">Объем: <span>400 мл</span></p>
 							</div>
-						</div>
+						</div> 
 						<div class="card__btn d-flex">
 							<div class="card__price-block">
 								<p class="card__price">2300 р.</p>

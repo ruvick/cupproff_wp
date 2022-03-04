@@ -2347,6 +2347,10 @@ body.ie ._ibg img {
   margin-right: 54px;
 }
 
+.header__top-bascket-icon {
+  margin-top: 0;
+}
+
 .bascket-icon:before {
   content: "";
   float: left;
@@ -2624,7 +2628,7 @@ body.ie ._ibg img {
 .slider-bg__slide {
   position: relative;
   width: 100%;
-  padding: 162px 0 260px 0;
+  padding: 162px 0 140px 0;
   background-repeat: no-repeat !important;
   background-size: cover !important;
   background-position: center !important;
@@ -3058,7 +3062,7 @@ body.ie ._ibg img {
   padding: 25px 0 85px 0;
 }
 
-.payment-info__container {
+/* .payment-info__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3066,7 +3070,7 @@ body.ie ._ibg img {
       -ms-flex-pack: end;
           justify-content: flex-end;
   max-width: 100%;
-}
+} */
 
 .payment-info__row {
   position: relative;
@@ -5542,6 +5546,8 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
 ._webp .slider__slide-03{ background: url(img/sl-main-03.webp); }
 
 ._webp .slider__slide-04{ background: url(img/sl-main-04.webp); }
+
+._webp .slider__slide-05{ background: url(img/sl-main-05.webp); }
 
 ._webp .design-glass__img{ background-image: url(img/design-glass/01.webp); }
 

@@ -99,16 +99,6 @@
 			</div>
 		</div>
 
-		<div class="slider-bg__slide slider__slide slider__slide-04 slider-main__slide">
-			<div class="nuar_blk"></div>
-			<div class="slider-bg__container _container">
-				<h1 class="slider-bg__title">
-					<span>Бумажные стаканчики</span>	 <br> с вашим индивидуальным дизайном
-				</h1>
-				<a href="#callback" class="slider-bg__link btn _popup-link">Заказать</a>
-			</div>
-		</div>
-
 		<div class="slider-bg__slide slider__slide slider__slide-01 slider-main__slide">
 			<div class="nuar_blk"></div>
 			<div class="slider-bg__container _container">
@@ -120,18 +110,27 @@
 			</div>
 		</div>
 
-		<div class="slider-bg__slide slider__slide slider__slide-02 slider-main__slide">
+		<div class="slider-bg__slide slider__slide slider__slide-05 slider-main__slide">
 			<div class="nuar_blk"></div>
 			<div class="slider-bg__container _container">
 				<h1 class="slider-bg__title">
-					БРЕНДОВАНЫЕ СТАКАНЫ <br>
-					ДЛЯ ВАШЕГО БИЗНЕСА
+					<span>Готовая продукция</span><br> Готовые бумажные стаканчики, <br> в ассортименте
 				</h1>
 				<a href="#callback" class="slider-bg__link btn _popup-link">Заказать</a>
 			</div>
 		</div>
 
-		<div class="slider-bg__slide slider__slide slider__slide-03 slider-main__slide">
+		<!-- <div class="slider-bg__slide slider__slide slider__slide-04 slider-main__slide">
+			<div class="nuar_blk"></div>
+			<div class="slider-bg__container _container">
+				<h1 class="slider-bg__title">
+					<span>Бумажные стаканчики</span>	 <br> с вашим индивидуальным дизайном
+				</h1>
+				<a href="#callback" class="slider-bg__link btn _popup-link">Заказать</a>
+			</div>
+		</div> -->
+
+		<!-- <div class="slider-bg__slide slider__slide slider__slide-02 slider-main__slide">
 			<div class="nuar_blk"></div>
 			<div class="slider-bg__container _container">
 				<h1 class="slider-bg__title">
@@ -140,7 +139,18 @@
 				</h1>
 				<a href="#callback" class="slider-bg__link btn _popup-link">Заказать</a>
 			</div>
-		</div>
+		</div> -->
+
+		<!-- <div class="slider-bg__slide slider__slide slider__slide-03 slider-main__slide">
+			<div class="nuar_blk"></div>
+			<div class="slider-bg__container _container">
+				<h1 class="slider-bg__title">
+					БРЕНДОВАНЫЕ СТАКАНЫ <br>
+					ДЛЯ ВАШЕГО БИЗНЕСА
+				</h1>
+				<a href="#callback" class="slider-bg__link btn _popup-link">Заказать</a>
+			</div>
+		</div> -->
 
 	</div>
 	<div class="slider-bg__swiper-button-block swiper-button-block">
@@ -429,6 +439,7 @@
 								$args = array(
 									'posts_per_page' => 4,
 									'post_type' => 'ultra',
+									'orderby' => 'rand',
 									'tax_query' => array(
 										array(
 									'taxonomy' => 'ultracat',

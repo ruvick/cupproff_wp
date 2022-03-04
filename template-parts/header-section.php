@@ -13,6 +13,7 @@
           <a href="mailto:<? echo $mail; ?>" class="header__mail"><? echo $mail; ?></a>
         <?}?> 
 				</div>
+				<a href="<?php echo get_permalink(40);?>" class="header__top-bascket-icon bascket-icon" aria-label="Корзина"><span class="bascket-icon__number bascet_counter">0</span></a>
 				<div class="header__top-social soc-block-icon menu__soc-block-icon">
 					<a href="<?php echo carbon_get_theme_option('as_insta'); ?>" class="soc-block-icon-link menu__soc-block-icon-link menu__soc-icon-1" aria-label="Иконка соцсети"></a>
 					<a href="<?php echo carbon_get_theme_option('as_vk'); ?>" class="soc-block-icon-link menu__soc-block-icon-link menu__soc-icon-2" aria-label="Иконка соцсети"></a>
@@ -48,7 +49,7 @@
 	<div class="menu__wrap">
 		<div class="menu__header">
 			<a href="index.html" class="logo-icon header__logo" aria-label="Логотип"></a> 
-			<a href="#" class="bascket-icon" aria-label="Корзина"><span class="bascket-icon__number bascet_counter">1</span></a>
+			<a href="<?php echo get_permalink(40);?>" class="bascket-icon" aria-label="Корзина"><span class="bascket-icon__number bascet_counter">0</span></a>
 			<div class="header__menu-icon-block menu-icon-block">
 				<p class="header__menu-icon-text">Меню</p>
 				<div class="icon-menu icon-menu_close active" aria-label="Бургер меню">
@@ -60,7 +61,7 @@
 		</div>
 		<div class="menu__body">
 			<div class="menu__container">
-				<div class="menu__list-wrap">
+				<div class="menu__list-wrap"> 
 					<div class="menu__list">
 						<h3><a href="https://cupproff.asmi-studio.ru/ultra">Наша продукция</a></h3>
 						<?php wp_nav_menu( array('theme_location' => 'menu_prod','menu_class' => 'menu__list-ul',

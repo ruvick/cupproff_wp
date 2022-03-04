@@ -168,7 +168,7 @@ function my_assets()
 
 	wp_enqueue_script('main', get_template_directory_uri() . '/js/main.js', array(), $scrypt_version, true); // Подключение основного скрипта в самом конце
 
-	if ( is_page(15)) // Корзина
+	if ( is_page(40)) // Корзина
 	{
 		wp_enqueue_script( 'vue', get_template_directory_uri().'/js/vue.js', array(), $scrypt_version, true);
 		wp_enqueue_script( 'axios', get_template_directory_uri().'/js/axios.min.js', array(), $scrypt_version, true);

@@ -25,8 +25,8 @@
 <script>  
   let main_page = "<?echo get_bloginfo("url"); ?>";
   let kabinet_page = "<?echo get_the_permalink(219); ?>";
-  let bascet_page = "<?echo get_the_permalink(15); ?>"; 
-  let thencs_page = "<?echo get_the_permalink(56); ?>"; 
+  let bascet_page = "<?echo get_the_permalink(40); ?>"; 
+  let thencs_page = "<?echo get_the_permalink(42); ?>"; 
   let nophoto_page = "<?echo get_bloginfo("template_url");?>/img/no-photo.jpg";
 </script> 
   <div class="wrapper">  
