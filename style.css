@@ -5566,4 +5566,4 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
 
 ._webp .design-glass__img_xs{ background-image: url(img/design-glass/06.webp); }
 
-._webp .product__slider{ background: url(img/nophoto.webp); }
+/* ._webp .product__slider{ background: url(img/nophoto.webp); } */

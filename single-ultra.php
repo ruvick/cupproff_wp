@@ -25,12 +25,24 @@ get_header(); ?>
 					<div class="product__row d-flex">
 
 						<div class="product__slider _swiper d-flex">
-							<div class="product__slide slider__slide">
-								<picture><source srcset="<?php echo get_template_directory_uri();?>/img/product/01.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/product/01.jpg?_v=1644843902057" alt=""></picture>
-							</div>
-							<div class="product__slide slider__slide">
-								<picture><source srcset="<?php echo get_template_directory_uri();?>/img/product/01.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/product/01.jpg?_v=1644843902057" alt=""></picture>
-							</div>
+						<?
+						    $pict = carbon_get_the_post_meta('offer_picture');
+						      if($pict) {
+							  $pictIndex = 0;
+							    foreach($pict as $item) {
+							?>
+								<div class="product__slide slider__slide">
+									<img
+										id = "pict-<? echo empty($item['gal_img_sku'])?$pictIndex:$item['gal_img_sku']; ?>" 
+										alt = "<? echo $item['gal_img_alt']; ?>"
+										title = "<? echo $item['gal_img_alt']; ?>"
+										src = "<?php echo wp_get_attachment_image_src($item['gal_img'], 'full')[0];?>" /> 								
+								</div>
+							<?
+								  $pictIndex++;
+							    }
+						    }
+						  ?>
 						</div>
 
 						<div class="product__descp">
@@ -50,7 +62,7 @@ get_header(); ?>
 								<? } ?>
 								<? $offerNumlayers = carbon_get_post_meta(get_the_ID(),"offer_num_layers");	
 									if (!empty($offerNumlayers )) { ?>
-										<p class="product__layers">Количество слоев: <? echo $offerNumlayers; ?> слоя</p>
+										<p class="product__layers">Количество слоев: <? echo $offerNumlayers; ?></p>
 								<? } ?>
 							</div>
 							<form action="#" class="product__choice d-flex">

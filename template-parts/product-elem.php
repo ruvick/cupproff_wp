@@ -7,8 +7,14 @@
 			<div class="card__text">
 				<h3 class="card__title"><? the_title();?></h3>
 				<div class="card__charect d-flex">
-					<p class="card__layer">Однослойные</p>
-					<p class="card__volume">Объем: <span>400 мл</span></p>
+					<? $offerNumlayers = carbon_get_post_meta(get_the_ID(),"offer_num_layers");	
+							if (!empty($offerNumlayers )) { ?>
+								<p class="card__layer"><? echo $offerNumlayers; ?></p>
+					<? } ?>
+					<? $offerValue = carbon_get_post_meta(get_the_ID(),"offer_value");	
+						if (!empty($offerValue )) { ?>
+							<p class="card__volume">Объем: <span><? echo $offerValue; ?> мл</span></p>
+					<? } ?>
 				</div>
 			</div> 
 			<div class="card__btn d-flex">
