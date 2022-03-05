@@ -389,10 +389,10 @@ let slidersSl = new Swiper('.sliders-sl', {
 // Сюда пишем класс нашего слайдера и меняем переменную
 let productSlider = new Swiper('.product__slider', {
 	// effect: 'fade',
-	// autoplay: {
-	// 	delay: 1300,
-	// 	disableOnInteraction: false,
-	// },
+	autoplay: {
+		delay: 1300,
+		disableOnInteraction: false,
+	},
 
 	observer: true,
 	observeParents: true,
@@ -446,6 +446,8 @@ let productSlider = new Swiper('.product__slider', {
 	//	el: '.swiper-scrollbar',
 	//},
 });
+
+
 var ua = window.navigator.userAgent;
 var msie = ua.indexOf("MSIE ");
 var isMobile = { Android: function () { return navigator.userAgent.match(/Android/i); }, BlackBerry: function () { return navigator.userAgent.match(/BlackBerry/i); }, iOS: function () { return navigator.userAgent.match(/iPhone|iPad|iPod/i); }, Opera: function () { return navigator.userAgent.match(/Opera Mini/i); }, Windows: function () { return navigator.userAgent.match(/IEMobile/i); }, any: function () { return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows()); } };
