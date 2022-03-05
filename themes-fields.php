@@ -12,14 +12,14 @@ use Carbon_Fields\Container;
 use Carbon_Fields\Field; 
 
 Container::make( 'theme_options', __( 'Настройки темы', 'crb' ) )
-    ->add_tab('Главная', array(
-      // Field::make( 'image', 'as_logo', 'Логотип в шапке')
-      //   ->set_width(30),
-      // Field::make( 'image', 'as_logo_white', 'Логотип в подвале')
-      //   ->set_width(30),
-      Field::make('text', 'about_home_title', 'Заголовок на главной'), 
-      Field::make('rich_text', 'about_home', 'О нашей компании')
-    ))
+    // ->add_tab('Главная', array(
+    //   // Field::make( 'image', 'as_logo', 'Логотип в шапке')
+    //   //   ->set_width(30),
+    //   // Field::make( 'image', 'as_logo_white', 'Логотип в подвале')
+    //   //   ->set_width(30),
+    //   Field::make('text', 'about_home_title', 'Заголовок на главной'), 
+    //   Field::make('rich_text', 'about_home', 'О нашей компании')
+    // ))
     ->add_tab('Слайдер', array(
       Field::make('complex', 'slider_index', 'Слайдер на главной')
         ->add_fields(array(
@@ -35,36 +35,36 @@ Container::make( 'theme_options', __( 'Настройки темы', 'crb' ) )
           //   ->set_width(50),
         ))
     ))
-    ->add_tab('Разделы', array(
-      Field::make('complex', 'complex_sections', 'Разделы на главной')
-      ->set_max(5) // Можно будет выбрать только 5 постов
-      ->add_fields(array(
-        Field::make('image', 'img_sections', 'Фото')
-        ->set_width(30),
-        Field::make('text', 'text_sections', 'Текст')   
-        ->set_width(30),
-        Field::make('text', 'link_sections', 'Ссылка')   
-        ->set_width(30),
-        Field::make("checkbox", "checkbox_stock", "Большая картинка"),
-        Field::make("checkbox", "checkbox_stock_title", "Большая картинка, заголовок слева"),
-        ))
-    ))
-    ->add_tab('Отзывы', array(
-      Field::make('complex', 'complex_reviews', 'Выводим Отзывы')
-      // ->set_max(3) // Можно будет выбрать только 5 постов
-      ->add_fields(array(
-        Field::make('image', 'img_reviews', 'Фото')
-        ->set_width(10),
-        Field::make('text', 'name_reviews', 'Имя')   
-        ->set_width(10),
-        Field::make('text', 'data_reviews', 'Дата')   
-        ->set_width(10),
-        Field::make('text', 'descp_reviews', 'Текст')   
-        ->set_width(30),
-        Field::make('text', 'link_reviews', 'Ссылка')   
-        ->set_width(10),
-        )) 
-    ))
+    // ->add_tab('Разделы', array(
+    //   Field::make('complex', 'complex_sections', 'Разделы на главной')
+    //   ->set_max(5) // Можно будет выбрать только 5 постов
+    //   ->add_fields(array(
+    //     Field::make('image', 'img_sections', 'Фото')
+    //     ->set_width(30),
+    //     Field::make('text', 'text_sections', 'Текст')   
+    //     ->set_width(30),
+    //     Field::make('text', 'link_sections', 'Ссылка')   
+    //     ->set_width(30),
+    //     Field::make("checkbox", "checkbox_stock", "Большая картинка"),
+    //     Field::make("checkbox", "checkbox_stock_title", "Большая картинка, заголовок слева"),
+    //     ))
+    // ))
+    // ->add_tab('Отзывы', array(
+    //   Field::make('complex', 'complex_reviews', 'Выводим Отзывы')
+    //   // ->set_max(3) // Можно будет выбрать только 5 постов
+    //   ->add_fields(array(
+    //     Field::make('image', 'img_reviews', 'Фото')
+    //     ->set_width(10),
+    //     Field::make('text', 'name_reviews', 'Имя')   
+    //     ->set_width(10),
+    //     Field::make('text', 'data_reviews', 'Дата')   
+    //     ->set_width(10),
+    //     Field::make('text', 'descp_reviews', 'Текст')   
+    //     ->set_width(30),
+    //     Field::make('text', 'link_reviews', 'Ссылка')   
+    //     ->set_width(10),
+    //     )) 
+    // ))
     ->add_tab('Контакты', array(
         Field::make( 'text', 'as_company', __( 'Название' ) )
           ->set_width(50),

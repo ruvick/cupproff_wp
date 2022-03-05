@@ -87,8 +87,29 @@
 
 <div class="slider-bg-wrap">
 	<div class="slider-bg _swiper">
+
+	<?
+			$pict = carbon_get_theme_option('slider_index');
+			if ($pict) {
+				$pictIndex = 0;
+				foreach ($pict as $item) {
+					?>
+						<div class="slider-bg__slide slider__slide slider-main__slide" style="background-image: url(<?php echo wp_get_attachment_image_src($item['slider_img'], 'full')[0]; ?>);">
+							<div class="nuar_blk"></div>
+							<div class="slider-bg__container _container">
+								<? if (!empty($item['slider_title'])) { ?>
+									<h1 class="slider-bg__title"><? echo $item['slider_title']; ?></h1>
+									<a href="#callback" class="slider-bg__link btn _popup-link">Заказать</a>
+								<? } ?>
+							</div>
+						</div>
+					<?
+						$pictIndex++;
+							}
+						}
+					?>
 		
-		<div class="slider-bg__slide slider__slide slider__slide-00 slider-main__slide">
+		<!-- <div class="slider-bg__slide slider__slide slider__slide-00 slider-main__slide">
 			<div class="nuar_blk"></div>
 			<div class="slider-bg__container _container">
 				<h1 class="slider-bg__title">
@@ -118,7 +139,7 @@
 				</h1>
 				<a href="#callback" class="slider-bg__link btn _popup-link">Заказать</a>
 			</div>
-		</div>
+		</div> -->
 
 		<!-- <div class="slider-bg__slide slider__slide slider__slide-04 slider-main__slide">
 			<div class="nuar_blk"></div>
