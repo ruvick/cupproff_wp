@@ -24,8 +24,9 @@ get_header(); ?>
 
 					<div class="product__row d-flex">
 
-						<div class="product__slider _swiper d-flex">
-						<?
+						<div class="product__slider">
+							<div class="productSl _swiper d-flex">
+							<?
 						    $pict = carbon_get_the_post_meta('offer_picture');
 						      if($pict) {
 							  $pictIndex = 0;
@@ -43,6 +44,9 @@ get_header(); ?>
 							    }
 						    }
 						  ?>
+							</div>
+							  <!-- Кнопки-точки -->
+								<div class="product-sl-paggination swiper-paggination"></div>
 						</div>
 
 						<div class="product__descp">

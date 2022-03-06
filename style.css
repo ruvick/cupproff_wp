@@ -3326,9 +3326,10 @@ body.ie ._ibg img {
   background: url("img/nophoto.jpg"); }
 
 .product__slider {
+  position: relative;
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 43.65%;
-          flex: 0 1 43.65%;
+  -ms-flex: 0 1 43.65%;
+  flex: 0 1 43.65%;
   max-height: 628px;
   border: 1px solid #BABABA;
   border-radius: 35px;
@@ -4031,7 +4032,49 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
   margin-bottom: 0;
 }
 
+.swiper-pagination-bullets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 31px;
+}
 
+.swiper-pagination-bullet {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 10px;
+  flex: 0 0 10px;
+  height: 10px;
+  background: #FFBD1F;
+  border-radius: 50%;
+  opacity: 0.6;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.swiper-pagination-bullet:last-child {
+  margin: 0px 0px 0px 0px;
+}
+
+.swiper-pagination-bullet-active {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 15px;
+  flex: 0 0 15px;
+  height: 15px;
+  background: #FFBD1F;
+  opacity: 1;
+}
+
+.product-sl-paggination {
+  position: absolute;
+  left: 45%;
+  bottom: 3%;
+}
 
 
 
