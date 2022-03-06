@@ -3462,7 +3462,7 @@ body.ie ._ibg img {
   border-radius: 3px;
   padding: 0 5px; }
 .bascet_page_table .b_tov_name {
-  color: #1dc17b;
+  color: #FFBD1F;
   text-transform: uppercase;
   margin-bottom: 10px; }
 .bascet_page_table .b_tov_sku {
@@ -3471,7 +3471,7 @@ body.ie ._ibg img {
   border-bottom: solid 1px #f5f5f5; }
 .bascet_page_table tfoot td,
 .bascet_page_table th {
-  border-bottom: 1px solid #1dc17b; }
+  border-bottom: 1px solid #FFBD1F; }
 .bascet_page_table .prev {
   width: 10%; }
 .bascet_page_table .name {
@@ -3511,7 +3511,7 @@ body.ie ._ibg img {
 
 .no_feild {
   width: 100%;
-  background-color: #1dc17b;
+  background-color: #FFBD1F;
   text-align: center;
   color: white;
   padding: 10px 2%;
@@ -3539,15 +3539,15 @@ input[type="checkbox"],
   margin-bottom: 15px;
   border-radius: 5px;
   min-width: 0 !important;
-  border: 1px solid #1dc17b;
+  border: 1px solid #FFBD1F;
   display: inline-block; }
 .bascet-form__textarea {
   height: 100%;
   margin: 0; }
 .bascet-form__btn {
-  width: 180px;
+  /* width: 180px; */
   height: 40px;
-  background: #65B965;
+  background: #FFBD1F;
   border-radius: 5px;
   color: #fff; }
 /* Оформление корзины End */
@@ -4418,6 +4418,8 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
   .menu__list h3 {
     margin-bottom: 10px;
   }
+  .bascet_form {
+    width: 60%;}
 }
 
 @media (max-width: 991.98px) {
@@ -4647,6 +4649,8 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
   .menu__header {
     padding-left: 10px;
   }
+  .bascet_form {
+    width: 100%;}
 }
 
 @media (max-width: 768px) {
@@ -5548,6 +5552,8 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
   .product__choice .quantity {
     width: 110px;
   }
+  .bascet-form__btn {
+    width: 100%;}
 }
 
 @media (max-width: 375px) {
