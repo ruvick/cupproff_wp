@@ -669,7 +669,7 @@ textarea.input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 90px;
+  width: 130px;
   height: 42px;
   padding: 0 3px;
   border: 1px solid #BABABA;
@@ -717,6 +717,13 @@ textarea.input {
   color: #161615;
   text-align: center;
   outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
 
 .price__inputs {
