@@ -23,7 +23,10 @@
 							if (!empty($offerPrice)) { ?>
 						<p class="card__price"><? echo $offerPrice; ?> р.</p>
 					<? } ?>
-					<p class="card__number">от 1000 шт</p>
+					<? $offQuantity = carbon_get_post_meta(get_the_ID(),"offer_quantity");	
+							if (!empty($offQuantity)) { ?>
+							<p class="card__number">от <? echo $offQuantity; ?> шт</p> 
+					<? } ?>
 				</div>
 				<button class="card__btn-link btn" id = "btn__to-card" onclick = "add_tocart(this, 0); return false;"
 					data-price = "<?echo carbon_get_post_meta(get_the_ID(),"offer_price"); ?>"

@@ -8,7 +8,7 @@ Template Post Type: post
 
 get_header(); ?>
 
-<?php get_template_part('template-parts/header-section');?>
+<?php get_template_part('template-parts/header-section');?> 
 
 <main class="page page-recurring">
 
@@ -49,7 +49,7 @@ get_header(); ?>
 							<div class="product__charect">
 								<? $offerPrice = carbon_get_post_meta(get_the_ID(),"offer_price");	
 									if (!empty($offerPrice)) { ?>
-										<p class="product__price">Цена: <? echo $offerPrice; ?> р. / 1000 шт.</p> 
+										<p class="product__price">Цена: <? echo $offerPrice; ?> р. / <?echo carbon_get_post_meta(get_the_ID(),"offer_quantity"); ?> шт.</p> 
 								<? } ?>
 								<p class="product__avail">Под заказ</p>
 								<? $offerSku = carbon_get_post_meta(get_the_ID(),"offer_sku");	
