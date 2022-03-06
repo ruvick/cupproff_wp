@@ -1,4 +1,5 @@
 <section id="terms" class="terms">
+	<div class="terms-wrap">
 	<div class="_container">
 		<div class="terms__row">
 			<div class="terms__descp">
@@ -14,5 +15,6 @@
 			  <img src="<?php echo get_template_directory_uri();?>/img/terms.png" alt="">
 		  </div>
 	  </div>
+	</div>
 	</div>
 </section>

@@ -3859,6 +3859,9 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
 
 .terms {
   padding: 65px 0;
+}
+.terms-wrap {
+  padding: 65px 0;
   background: #E6E6E6;
 }
 .terms__row {
