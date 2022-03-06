@@ -51,21 +51,7 @@
 			?>
 		</div>
 
-		<div class="pagging">
-			<a href="" class="pagging__arrow pagging__arrow_back"></a>
-			<ul class="pagging__list">
-				<li>
-					<a href="" class="pagging__item _active">1</a>
-				</li>
-				<li>
-					<a href="" class="pagging__item">2</a>
-				</li>
-				<li>
-					<a href="" class="pagging__item">3</a>
-				</li>
-			</ul>
-			<a href="" class="pagging__arrow pagging__arrow_next">Следующая страница</a>
-		</div>
+		<?php if ( function_exists( 'wp_corenavi' ) ) wp_corenavi(); ?> 
 
 	</div>
 </section>
