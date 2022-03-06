@@ -2038,7 +2038,7 @@ body.ie ._ibg img {
 .header__bottom-menu-list li a {
   display: block;
   font-size: 18px;
-  padding: 3px 45px 0 3px;
+  padding: 3px 45px 3px 0;
 }
 
 .header__logo {
@@ -4116,6 +4116,23 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
   bottom: 3%;
 }
 
+.header__phone_mob,
+.header__top-bascket-icon_mob {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -4423,6 +4440,10 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
   }
   .bascet_form {
     width: 60%;}
+  .header__bottom-menu-list li a {
+    font-size: 16px;}
+  .header__top-bascket-icon {
+    margin-left: auto;}
 }
 
 @media (max-width: 991.98px) {
@@ -4534,10 +4555,6 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
     -webkit-box-flex: 0;
         -ms-flex: 0 0 230px;
             flex: 0 0 230px;
-  }
-
-  .header__phone {
-    font-size: 30px;
   }
 
   .header__menu-icon-block {
@@ -4668,7 +4685,7 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
   .header {
     position: fixed;
     width: 100%;
-    padding: 5px 0;
+    padding: 3.5px 0;
   }
 
   .header-index {
@@ -5206,6 +5223,21 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
   .menu__list {
     margin-bottom: 35px;
   }
+  .header__bottom-menu-list {
+    display: none;}
+  .header__top {
+    display: none;}
+  .header__bottom {
+    padding: 0;}
+  .logo-icon {
+    flex: 0 0 70px;
+    height: 30px;}
+  .header__phone_mob,
+  .header__top-bascket-icon_mob {
+    display: block;
+    margin-top: 0;}
+  .header__phone_mob:before {
+    display: none;}
 }
 
 @media (max-width: 700px) {
@@ -5408,14 +5440,6 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
 }
 
 @media (max-width: 515px) {
-  .logo-icon {
-    height: 35px;
-  }
-
-  .bascket-icon {
-    margin-top: -4.5px;
-  }
-
   .mob-callback__phone {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -5601,10 +5625,12 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
         -ms-flex: 0 0 53%;
             flex: 0 0 53%;
   }
-
   .menu__container {
-    padding: 0 25px;
-  }
+    padding: 0 25px;}
+  .header__phone {
+    font-size: 15px;
+    margin-top: 3px;
+    margin-right: 10px;}
 }
 
 @media (max-width: 330px) {

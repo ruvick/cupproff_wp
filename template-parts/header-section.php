@@ -30,6 +30,11 @@
 				<a href="<? bloginfo("url"); ?>" class="logo-icon header__logo" aria-label="Логотип"></a>
 				<?php wp_nav_menu( array('theme_location' => 'menu_main','menu_class' => 'header__bottom-menu-list',
 					'container_class' => 'header__bottom-menu-list','container' => false )); ?>
+				<a href="<?php echo get_permalink(40);?>" class="header__top-bascket-icon header__top-bascket-icon_mob bascket-icon" aria-label="Корзина"><span class="bascket-icon__number bascet_counter">0</span></a>
+				<? $tel = carbon_get_theme_option("as_phones_1"); 
+					if (!empty($tel)){?>
+          <a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>" class="contacts__phone header__phone header__phone_mob"><? echo $tel; ?></a>
+        <?}?> 
 				<div class="icon-menu icon-menu_open" aria-label="Бургер меню">
 					<span></span>
 					<span></span>
