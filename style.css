@@ -5238,6 +5238,12 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
     margin-top: 0;}
   .header__phone_mob:before {
     display: none;}
+  .slider-bg__slide {
+    padding: 65px 0 45px 0;}
+  .slider-bg__title span {
+    font-size: 36px;}
+  .swiper-button {
+    display: none;}
 }
 
 @media (max-width: 700px) {
